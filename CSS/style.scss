@@ -1,0 +1,131 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/*BREAK POINTS*/
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+/* Color Theme Swatches in Hex */
+$color-casiBlanco: #F2F2F2;
+$color-gris: #BFBFBF;
+$color-grisTopo: #737373;
+$color-grisOscuro: #404040;
+$color-negro: #0D0D0D;
+
+/*FONT*/
+$main-font: 'Source Sans Pro',
+sans-serif;
+
+body {
+    font-family: $main-font;
+    background-color: $color-negro;
+
+    .header {
+        min-width: 100vw;
+        min-height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 2em;
+        padding-right: 2em;
+
+        @media (max-width: $mobile-breakpoint) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: $tablet-breakpoint) {
+            display: flex;
+            justify-content: center;
+        }
+
+        &-its {
+            color: $color-casiBlanco;
+            font-size: 1.7em;
+            padding: 0.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            transition: transform 1s all;
+            border-radius: 30px;
+            background-color: $color-grisOscuro;
+            width: 110px;
+            height: 35px;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    .section {
+        margin-top: 5em;
+
+        &-content {
+            max-width: 99vw;
+            margin: 10px;
+            box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-wrap: wrap;
+
+            @media screen {}
+
+            &-images {
+                width: 600px;
+                margin: 0 auto 20px;
+
+                img {
+                    width: 100%;
+                    transition: transform 1s all;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        max-width: 99vw;
+        background-color: $color-grisOscuro;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2em;
+
+        &-a {
+            margin: 1em;
+            font-size: 2em;
+
+
+            a {
+                color: $color-negro;
+                transition: transform 2s all;
+
+                .fab {
+                    transition: transform 2s all;
+
+                    &:hover {
+                        transform: scale(1.09);
+                        color: $color-casiBlanco;
+                    }
+                }
+
+                .far {
+                    transition: transform 2s all;
+
+                    &:hover {
+                        transform: scale(1.09);
+                        color: $color-casiBlanco;
+                    }
+                }
+            }
+        }
+    }
+}
