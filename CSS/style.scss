@@ -51,7 +51,7 @@ body {
         &-its {
             color: $color-casiBlanco;
             font-size: 1.7em;
-            padding: 0.5em;
+            padding: 0.5em 2.5em;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,6 +61,7 @@ body {
             background-color: $color-grisOscuro;
             width: 110px;
             height: 35px;
+            font-family: $main-font;
 
             &:hover {
                 transform: scale(1.02);
@@ -71,7 +72,7 @@ body {
     .main-text {
         max-width: 100vw;
         min-height: 100vh;
-              
+
 
         @media (max-width: $minimobile-breakpoint) {
             display: flex;
@@ -82,8 +83,8 @@ body {
         &-principal {
             padding-top: 14em;
             padding-left: 3em;
-            
-            
+
+
             @media (max-width: $minimobile-breakpoint) {
                 display: flex;
                 justify-content: center;
@@ -97,26 +98,32 @@ body {
                 color: $color-casiBlanco;
                 font-family: $main-font;
                 font-size: 5em;
-                padding-bottom: 0.5em;
                 line-height: 1em;
 
                 @media (max-width: $minimobile-breakpoint) {
                     text-align: center;
-                        
+
                 }
+            }
+
+            &-line {
+                margin-bottom: 2em;
+                margin-left: 0.3em;
+                border: 1px solid #fff;
+                max-width: 60px
             }
 
             &-p1 {
                 color: $color-casiBlanco;
                 font-family: $main-font;
                 font-size: 1em;
-                width: 40%;
+                width: 50%;
                 padding-bottom: 0.8em;
                 line-height: 1.5em;
 
                 @media (max-width: $minimobile-breakpoint) {
                     text-align: center;
-                    margin: 0 auto ;
+                    margin: 0 auto;
                     max-width: 100vw;
                 }
             }
@@ -125,7 +132,7 @@ body {
                 color: $color-casiBlanco;
                 font-family: $main-font;
                 font-size: 1em;
-                width: 40%;
+                width: 50%;
                 line-height: 1.5em;
 
                 @media (max-width: $minimobile-breakpoint) {
@@ -175,7 +182,6 @@ body {
         &-a {
             margin: 1em;
             font-size: 2em;
-
 
             a {
                 color: $color-negro;

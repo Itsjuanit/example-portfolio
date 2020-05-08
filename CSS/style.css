@@ -62,7 +62,7 @@ body .header {
 body .header-its {
   color: #F2F2F2;
   font-size: 1.7em;
-  padding: 0.5em;
+  padding: 0.5em 2.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,6 +81,7 @@ body .header-its {
   background-color: #404040;
   width: 110px;
   height: 35px;
+  font-family: "Open Sans", sans-serif;
 }
 
 body .header-its:hover {
@@ -132,7 +133,6 @@ body .main-text-principal-h1 {
   color: #F2F2F2;
   font-family: "Open Sans", sans-serif;
   font-size: 5em;
-  padding-bottom: 0.5em;
   line-height: 1em;
 }
 
@@ -142,11 +142,18 @@ body .main-text-principal-h1 {
   }
 }
 
+body .main-text-principal-line {
+  margin-bottom: 2em;
+  margin-left: 0.3em;
+  border: 1px solid #fff;
+  max-width: 60px;
+}
+
 body .main-text-principal-p1 {
   color: #F2F2F2;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  width: 40%;
+  width: 50%;
   padding-bottom: 0.8em;
   line-height: 1.5em;
 }
@@ -163,7 +170,7 @@ body .main-text-principal-p2 {
   color: #F2F2F2;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  width: 40%;
+  width: 50%;
   line-height: 1.5em;
 }
 
