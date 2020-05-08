@@ -34,6 +34,7 @@ body .header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
 }
 
@@ -103,6 +104,7 @@ body .main-text {
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 1em;
+    min-width: 100%;
   }
 }
 
@@ -125,7 +127,6 @@ body .main-text-principal {
             flex-direction: column;
     font-size: 1em;
     min-width: 100vw;
-    margin: 0 auto;
   }
 }
 
@@ -138,15 +139,10 @@ body .main-text-principal-h1 {
 
 @media (max-width: 300px) {
   body .main-text-principal-h1 {
-    text-align: center;
+    padding: 0;
+    padding-top: 0;
+    margin-top: 0;
   }
-}
-
-body .main-text-principal-line {
-  margin-bottom: 2em;
-  margin-left: 0.3em;
-  border: 1px solid #fff;
-  max-width: 60px;
 }
 
 body .main-text-principal-p1 {
@@ -160,9 +156,8 @@ body .main-text-principal-p1 {
 
 @media (max-width: 300px) {
   body .main-text-principal-p1 {
-    text-align: center;
-    margin: 0 auto;
     max-width: 100vw;
+    font-size: 0.9em;
   }
 }
 

@@ -36,6 +36,7 @@ body {
         @media (max-width: $minimobile-breakpoint) {
             display: flex;
             justify-content: center;
+            margin: 0;
         }
 
         @media (max-width: $mobile-breakpoint) {
@@ -78,6 +79,7 @@ body {
             display: flex;
             justify-content: center;
             font-size: 1em;
+            min-width: 100%;
         }
 
         &-principal {
@@ -91,7 +93,6 @@ body {
                 flex-direction: column;
                 font-size: 1em;
                 min-width: 100vw;
-                margin: 0 auto;
             }
 
             &-h1 {
@@ -101,17 +102,12 @@ body {
                 line-height: 1em;
 
                 @media (max-width: $minimobile-breakpoint) {
-                    text-align: center;
-
+                    padding: 0;
+                    padding-top: 0;
+                    margin-top: 0;
                 }
             }
 
-            &-line {
-                margin-bottom: 2em;
-                margin-left: 0.3em;
-                border: 1px solid #fff;
-                max-width: 60px
-            }
 
             &-p1 {
                 color: $color-casiBlanco;
@@ -122,9 +118,8 @@ body {
                 line-height: 1.5em;
 
                 @media (max-width: $minimobile-breakpoint) {
-                    text-align: center;
-                    margin: 0 auto;
                     max-width: 100vw;
+                    font-size: 0.9em;
                 }
             }
 
