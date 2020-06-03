@@ -75,7 +75,7 @@ body {
         @media (max-width: $minimobile-breakpoint) {
             display: flex;
             justify-content: center;
-            font-size: 1em;
+            font-size: 1.5em;
             min-width: 100%;
         }
 
@@ -95,6 +95,16 @@ body {
                 flex-direction: column;
                 font-size: 1em;
                 min-width: 100vw;
+                background-image: none;
+            }
+
+            @media (max-width: $mobile-breakpoint) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                font-size: 1em;
+                min-width: 100vw;
+                background-image: none;
             }
 
             &-h1 {
