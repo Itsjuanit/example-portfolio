@@ -96,6 +96,12 @@ body .main-text {
 body .main-text-principal {
   padding-top: 14em;
   padding-left: 3em;
+  margin-top: 3em;
+  margin-right: 6em;
+  background-image: url(/SRC/person.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
 }
 
 @media (max-width: 300px) {
