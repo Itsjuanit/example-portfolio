@@ -26,6 +26,38 @@ body {
     background-color: $color-negro;
     overflow-x: hidden;
 
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+    }
+
+    //Estilos barra (thumb) de scroll 
+    &::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+        background-color: #999999;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    //Estilos track de scroll 
+    &::-webkit-scrollbar-track {
+        background: #999;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track:hover,
+    &::-webkit-scrollbar-track:active {
+        background: #222;
+    }
+
+
     .header {
         min-width: 100vw;
         min-height: 40px;
