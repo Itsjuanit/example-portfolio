@@ -103,11 +103,99 @@ body {
 
     .main {
         min-width: 100vw;
-        min-height: 100vh;
-        &-articles{
+        min-height: 70vh;
+
+        &-secondarytitle {
+            color: $color-casiBlanco;
+            font-size: 3em;
+            padding-top: 2em;
+            padding-left: 3em;
+        }
+
+        &-paragraph {
+            padding-left: 3em;
+            width: 70%;
+            color: $color-casiBlanco;
+            font-size: 1.2em;
+        }
+
+        &-boxs {
+            max-width: 100%;
+            display: flex;
+            flex-grow: 4;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+            .main-articles {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 2em;
+                border-radius: 30px;
+                width: 300px;
+                height: 150px;
+                cursor: pointer;            
+            }
+
+            //
+            .git {
+                background-color: #dd4c36;
+                border: none;
+                font-size: 1.5em;
+            }
+
+            .modalContainer {
+                display: none;
+                position: fixed;
+                width: 80%;
+                height: 100%;
+                font-family: $main-font;
+
+                &Text {
+                    background-color: #777;
+                    margin: auto;
+                    padding: 1em;
+                    border-top: 15px solid #dd4c36;
+                    max-width: 50%;
+                    border-radius:10px;
+                  }
+          
+                          
+                &H2 {
+                    color: $color-negro;
+                    font-weight: 700;
+                    margin-bottom: 0.5em;
+                    
+                }
+          
+                &Peldos {
+                    color: #fff;               
+                }
+            }
+            //
+
+            .html {
+                background-color: #00d48c;
+                border: none;
+                font-size: 1.5em;
+            }
+
+            .css {
+                background-color: #2174f8;
+                border: none;
+                font-size: 1.5em;
+            }
+
+            .js {
+                background-color: #f0d91d;
+                border: none;
+                font-size: 1.5em;
+            }
 
         }
     }
+
     .footer {
         max-width: 99vw;
         background-color: $color-grisOscuro;
