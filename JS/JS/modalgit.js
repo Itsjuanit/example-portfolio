@@ -14,3 +14,23 @@ elModal.onclick = () => {
         modalContainer.style.display = "block";
     }
 }
+
+//
+
+const elHtml =
+    document.querySelector(".elHtml");
+const modalContainerHtml =
+    document.querySelector(".modalContainerHtml");
+
+elHtml.onclick = () => {
+    modalContainerHtml.style.display = "block";
+}
+
+elHtml.onclick = () => {
+    if (mmodalContainerHtml.style.display == "block") {
+        modalContainerHtml.style.display = "none";
+    } else {
+        modalContainerHtml.style.display = "block";
+    }
+}
+

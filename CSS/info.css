@@ -196,6 +196,29 @@ body .main-boxs .html {
   font-size: 1.5em;
 }
 
+body .main-boxs .modalContainerHtml {
+  display: none;
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+body .main-boxs .modalContainerHtmlTextHtml {
+  background-color: #777;
+  margin: auto;
+  padding: 1em;
+  border-top: 15px solid #dd4c36;
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+body .main-boxs .modalContainerHtmlH2Html {
+  color: #0D0D0D;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
 body .main-boxs .css {
   background-color: #2174f8;
   border: none;
