@@ -260,7 +260,7 @@ body .section-content {
 }
 
 body .section-content-images {
-  width: 600px;
+  width: 460px;
   margin: 0 auto 20px;
 }
 
@@ -274,13 +274,17 @@ body .section-content-images img {
 }
 
 body .section-content-images img:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
 }
 
 body .footer {
   max-width: 99vw;
   background-color: #404040;
+  padding: 0.5em;
+}
+
+body .footer-foo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,15 +293,14 @@ body .footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.5em;
 }
 
-body .footer-a {
+body .footer-foo-a {
   margin: 1em;
   font-size: 2em;
 }
 
-body .footer-a a {
+body .footer-foo-a a {
   color: #0D0D0D;
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
@@ -305,42 +308,61 @@ body .footer-a a {
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-body .footer-a a .fab {
+body .footer-foo-a a .fab {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-body .footer-a a .fab:hover {
+body .footer-foo-a a .fab:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #F2F2F2;
 }
 
-body .footer-a a .far {
+body .footer-foo-a a .far {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-body .footer-a a .far:hover {
+body .footer-foo-a a .far:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #F2F2F2;
 }
 
-body .footer-a a .fas {
+body .footer-foo-a a .fas {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-body .footer-a a .fas:hover {
+body .footer-foo-a a .fas:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #F2F2F2;
+}
+
+body .footer-parragraph {
+  font-family: "Open Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .footer-parragraph-p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
