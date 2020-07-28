@@ -270,7 +270,8 @@ body {
                 }
                 .fas {
                     transition: transform 2s all;
-
+                    //transition: transform 2s all;
+                    
                     &:hover {
                         transform: scale(1.09);
                         color: $color-casiBlanco;
