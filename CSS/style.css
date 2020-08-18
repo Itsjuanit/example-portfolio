@@ -10,7 +10,7 @@
 /*FONT*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #0D0D0D;
+  background-color: #0d0d0d;
   overflow-x: hidden;
 }
 
@@ -75,7 +75,7 @@ body .header {
 }
 
 body .header-its {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-size: 1.7em;
   padding: 0.5em 2.5em;
   display: -webkit-box;
@@ -179,7 +179,7 @@ body .main-text-principal {
 }
 
 body .main-text-principal-h1 {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
   font-size: 5em;
   line-height: 1em;
@@ -202,7 +202,7 @@ body .main-text-principal-h1 {
 }
 
 body .main-text-principal-p1 {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   width: 50%;
@@ -224,7 +224,7 @@ body .main-text-principal-p1 {
 }
 
 body .main-text-principal-p2 {
-  color: #F2F2F2;
+  color: #f2f2f2;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   width: 50%;
@@ -262,6 +262,19 @@ body .section-content {
 body .section-content-images {
   width: 600px;
   margin: 0 auto 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .section-content-images img {
@@ -276,6 +289,12 @@ body .section-content-images img {
 body .section-content-images img:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+body .section-content-images .other {
+  margin-top: 15px;
+  font-size: 2em;
+  color: #fafafa;
 }
 
 body .footer {
@@ -298,7 +317,7 @@ body .footer-a {
 }
 
 body .footer-a a {
-  color: #0D0D0D;
+  color: #0d0d0d;
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -315,7 +334,7 @@ body .footer-a a .fab {
 body .footer-a a .fab:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 body .footer-a a .far {
@@ -328,7 +347,7 @@ body .footer-a a .far {
 body .footer-a a .far:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 
 body .footer-a a .fas {
@@ -341,6 +360,6 @@ body .footer-a a .fas {
 body .footer-a a .fas:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #F2F2F2;
+  color: #f2f2f2;
 }
 /*# sourceMappingURL=style.css.map */
