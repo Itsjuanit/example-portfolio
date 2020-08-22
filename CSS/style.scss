@@ -340,6 +340,19 @@ html {
           }
         }
       }
+
+      .fa-arrow-up {
+        justify-content: flex-end;
+        color: $color-negro;
+        font-size: 2rem;
+
+        &:hover {
+          transform: scale(1.09);
+          color: $color-grisTopo;
+        }
+      }
+
+
     }
   }
 }

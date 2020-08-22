@@ -432,4 +432,18 @@ html body .footer-a a .fas:hover {
           transform: scale(1.09);
   color: #737373;
 }
+
+html body .footer .fa-arrow-up {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #0d0d0d;
+  font-size: 2rem;
+}
+
+html body .footer .fa-arrow-up:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  color: #737373;
+}
 /*# sourceMappingURL=style.css.map */
