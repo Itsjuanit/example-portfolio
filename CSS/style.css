@@ -14,7 +14,7 @@ html {
 
 html body {
   font-family: "Roboto", sans-serif;
-  background-color: #0d0d0d;
+  background-color: #fafafa;
   overflow-x: hidden;
 }
 
@@ -60,7 +60,7 @@ html body .header {
   padding-right: 2em;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   html body .header {
     display: none;
   }
@@ -78,8 +78,15 @@ html body .header {
   }
 }
 
-html body .header-its {
-  color: #f2f2f2;
+html body .header-nav {
+  white-space: nowrap;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html body .header-nav .header-its {
+  color: #fafafa;
   font-size: 1.7em;
   padding: 0.5em 2.5em;
   display: -webkit-box;
@@ -102,15 +109,17 @@ html body .header-its {
   height: 35px;
   font-family: "Roboto", sans-serif;
   margin-right: 10px;
+  -webkit-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
 }
 
-html body .header-its:hover {
+html body .header-nav .header-its:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
 
-html body .header .internos {
-  color: #f2f2f2;
+html body .header-nav .internos {
+  color: #fafafa;
   font-size: 1.7em;
   padding: 0.5em 2.5em;
   display: -webkit-box;
@@ -133,6 +142,8 @@ html body .header .internos {
   height: 35px;
   font-family: "Roboto", sans-serif;
   margin-right: 10px;
+  -webkit-box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 14px -8px rgba(0, 0, 0, 0.75);
 }
 
 html body .main-text {
@@ -146,7 +157,7 @@ html body .main-text {
           }*/
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   html body .main-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -171,7 +182,7 @@ html body .main-text-principal {
   background-position-y: bottom;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   html body .main-text-principal {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -210,13 +221,13 @@ html body .main-text-principal {
 }
 
 html body .main-text-principal-h1 {
-  color: #f2f2f2;
+  color: #404040;
   font-family: "Roboto", sans-serif;
   font-size: 5em;
   line-height: 1em;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   html body .main-text-principal-h1 {
     padding: 0;
     padding-top: 0;
@@ -233,7 +244,7 @@ html body .main-text-principal-h1 {
 }
 
 html body .main-text-principal-p1 {
-  color: #f2f2f2;
+  color: #404040;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   width: 50%;
@@ -241,7 +252,7 @@ html body .main-text-principal-p1 {
   line-height: 1.5em;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   html body .main-text-principal-p1 {
     max-width: 100%;
     font-size: 0.7em;
@@ -255,14 +266,14 @@ html body .main-text-principal-p1 {
 }
 
 html body .main-text-principal-p2 {
-  color: #f2f2f2;
+  color: #404040;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   width: 50%;
   line-height: 1.5em;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   html body .main-text-principal-p2 {
     display: none;
   }
@@ -281,7 +292,7 @@ html body .section {
 html body .section .title {
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
-  color: #f2f2f2;
+  color: #404040;
   padding-left: 1em;
   padding-bottom: 1em;
 }
@@ -338,7 +349,7 @@ html body .section-content-images .other {
 
 html body .footer {
   max-width: 99vw;
-  background-color: #404040;
+  background-color: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,7 +384,7 @@ html body .footer-a a .fab {
 html body .footer-a a .fab:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #f2f2f2;
+  color: #fafafa;
 }
 
 html body .footer-a a .far {
@@ -386,7 +397,7 @@ html body .footer-a a .far {
 html body .footer-a a .far:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #f2f2f2;
+  color: #fafafa;
 }
 
 html body .footer-a a .fas {
@@ -399,6 +410,6 @@ html body .footer-a a .fas {
 html body .footer-a a .fas:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #f2f2f2;
+  color: #fafafa;
 }
 /*# sourceMappingURL=style.css.map */

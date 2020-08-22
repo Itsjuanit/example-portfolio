@@ -18,13 +18,15 @@
 <body>
     <!--Header-->
     <header class="header">
-        <a href="#Proyectos" class="internos" target="blank_">Proyectos</a>
-        <a href="#Contacto" class="internos" target="blank_">Contacto</a>
-        <a href="https://github.com/Itsjuanit" class="header-its" target="blank_">itsjuanit</a>
+        <nav class="header-nav">
+            <a href="#Proyectos" class="internos">Proyectos</a>
+            <a href="#Contacto" class="internos">Contacto</a>
+            <a href="https://github.com/Itsjuanit" class="header-its" target="blank_">itsjuanit</a>
+        </nav>
     </header>
     <!--Main Text-->
     <section class="main-text">
-        <div class="main-text-principal">
+        <div class="main-text-principal darkmode-ignore">
             <h1 class="main-text-principal-h1">Hola</h1>
             <p class="main-text-principal-p1">
                 Mi nombre es Juan Ignacio Tejada, tengo 24 años, soy Desarrollador
@@ -46,7 +48,7 @@
     <!--Portfolio-->
     <section class="section">
         <h2 class="title" id="Proyectos">Proyectos</h2>
-        <div class="section-content">
+        <div class="section-content darkmode-ignore">
             <div class="section-content-images">
                 <a href="https://voicetext.vercel.app/" target="blank_"><img src="SRC/Voicetext-min.png" alt="" /></a>
                 <abbr title="CÓDIGO DEL PROYECTO">
@@ -152,5 +154,13 @@
         </span>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+<script src="/JS/main.js"></script>
 
 </html>
