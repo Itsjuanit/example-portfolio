@@ -274,7 +274,7 @@ html {
           }
 
           &-indiv {
-            width: 600px;
+            width: 100%;
             height: 40px;
             background-color: $color-negro;
             opacity: 0.9;
@@ -288,6 +288,15 @@ html {
               font-size: 2em;
               color: #fafafa;
             }
+
+            @media (max-width: $minimobile-breakpoint) {
+              display: none;
+            }
+  
+            @media (max-width: $mobile-breakpoint) {
+              min-width: none;
+            }
+
           }
         }
       }

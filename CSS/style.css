@@ -345,7 +345,7 @@ html body .section-content-images img {
 }
 
 html body .section-content-images-indiv {
-  width: 600px;
+  width: 100%;
   height: 40px;
   background-color: #0d0d0d;
   opacity: 0.9;
@@ -365,6 +365,18 @@ html body .section-content-images-indiv {
 html body .section-content-images-indiv .other {
   font-size: 2em;
   color: #fafafa;
+}
+
+@media (max-width: 320px) {
+  html body .section-content-images-indiv {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  html body .section-content-images-indiv {
+    min-width: none;
+  }
 }
 
 html body .footer {
