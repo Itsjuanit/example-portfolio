@@ -18,8 +18,7 @@ $color-grisOscuro: #404040;
 $color-negro: #0d0d0d;
 
 /*FONT*/
-$main-font: 'Roboto',
-sans-serif;
+$main-font: "Roboto", sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -85,7 +84,6 @@ html {
       &-nav {
         white-space: nowrap;
         display: inline-flex;
-
 
         .header-its {
           color: $color-casiBlanco;
@@ -251,7 +249,8 @@ html {
         display: flex;
         flex-wrap: wrap;
 
-        @media screen {}
+        @media screen {
+        }
 
         &-images {
           width: 600px;
@@ -290,7 +289,6 @@ html {
               color: #fafafa;
             }
           }
-
         }
       }
     }
@@ -301,56 +299,55 @@ html {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 0.5em;
 
-      &-a {
-        margin: 1em;
-        font-size: 2em;
+        &-a {
+          margin: 1em;
+          font-size: 2em;
 
-        a {
+          a {
+            color: $color-negro;
+            transition: transform 2s all;
+
+            .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
+              transition: transform 2s all;
+              color: $color-negro;
+              &:hover {
+                transform: scale(1.09);
+                color: $color-grisTopo;
+              }
+            }
+
+            .far .fa-envelope {
+              transition: transform 2s all;
+              color: $color-negro;
+              &:hover {
+                transform: scale(1.09);
+                color: $color-grisTopo;
+              }
+            }
+
+            .fas .fa-arrow-up {
+              transition: transform 2s all;
+              //transition: transform 2s all;
+
+              &:hover {
+                transform: scale(1.09);
+                color: $color-grisTopo;
+              }
+            }
+          }
+        }
+
+        .fa-arrow-up {
+          justify-content: flex-end;
           color: $color-negro;
-          transition: transform 2s all;
+          font-size: 2rem;
 
-          .fab {
-            transition: transform 2s all;
-
-            &:hover {
-              transform: scale(1.09);
-              color: $color-grisTopo;
-            }
-          }
-
-          .far {
-            transition: transform 2s all;
-
-            &:hover {
-              transform: scale(1.09);
-              color: $color-grisTopo;
-            }
-          }
-
-          .fas {
-            transition: transform 2s all;
-            //transition: transform 2s all;
-
-            &:hover {
-              transform: scale(1.09);
-              color: $color-grisTopo;
-            }
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
           }
         }
-      }
-
-      .fa-arrow-up {
-        justify-content: flex-end;
-        color: $color-negro;
-        font-size: 2rem;
-
-        &:hover {
-          transform: scale(1.09);
-          color: $color-grisTopo;
-        }
-      }
 
 
     }
