@@ -404,7 +404,7 @@ html body .footer-a a .fab {
 html body .footer-a a .fab:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #fafafa;
+  color: #737373;
 }
 
 html body .footer-a a .far {
@@ -417,7 +417,7 @@ html body .footer-a a .far {
 html body .footer-a a .far:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #fafafa;
+  color: #737373;
 }
 
 html body .footer-a a .fas {
@@ -430,6 +430,6 @@ html body .footer-a a .fas {
 html body .footer-a a .fas:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
-  color: #fafafa;
+  color: #737373;
 }
 /*# sourceMappingURL=style.css.map */
