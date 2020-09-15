@@ -18,7 +18,8 @@ $color-grisOscuro: #404040;
 $color-negro: #222;
 
 /*FONT*/
-$main-font: "Roboto", sans-serif;
+$main-font: "Roboto",
+sans-serif;
 
 :root {
   --font-size-small: 1.8rem;
@@ -150,6 +151,18 @@ html {
       &:hover {
         background-color: #555;
       }
+
+      @media (max-width: $minimobile-breakpoint) {
+        display: none;
+      }
+
+      @media (max-width: $mobile-breakpoint) {
+        display: none;
+      }
+
+      @media (max-width: $tablet-breakpoint) {
+        display: none;
+      }
     }
 
     .header {
@@ -237,9 +250,6 @@ html {
       @media (max-width: $minimobile-breakpoint) {
         display: flex;
         justify-content: center;
-        font-size: 1.5em;
-        min-width: 100%;
-        padding: 1em;
       }
 
       &-principal {
@@ -252,8 +262,8 @@ html {
           display: flex;
           justify-content: center;
           flex-direction: column;
-          font-size: 1em;
-          min-width: 100vw;
+          font-size: 2em;
+          max-width: 100%;
           background-image: none;
           overflow-x: hidden;
         }
@@ -358,249 +368,249 @@ html {
         }
       }
     }
-  }
 
-  .about {
-    color: $color-casiBlanco;
-    min-width: 100vw;
-    min-height: 100vh;
-    height: 100vh;
 
-    .quien {
-      font-size: 4.3rem;
-      margin: 50px 0 50px 30px;
+    .about {
+      color: $color-casiBlanco;
+      min-width: 100vw;
+      min-height: 100vh;
+      height: 100vh;
 
-      @media (max-width: $minimobile-breakpoint) {
-        padding: 5px;
-        padding-top: 0;
-        margin-top: 0;
-        border: none;
-        font-size: 1.5rem;
-        max-width: 310px;
-      }
-
-      @media (max-width: $mobile-breakpoint) {
-        font-size: 1.5rem;
-        max-width: 310px;
-      }
-    }
-
-    &-text {
-      font-family: $main-font;
-      width: 800px;
-      height: auto;
-      margin-left: 30px;
-
-      .myName {
-        font-size: 1.5rem;
-        color: $color-casiBlanco;
-        margin-bottom: 30px;
+      .quien {
+        font-size: 4.3rem;
+        margin: 50px 0 50px 30px;
 
         @media (max-width: $minimobile-breakpoint) {
           padding: 5px;
           padding-top: 0;
           margin-top: 0;
           border: none;
-          font-size: 1rem;
+          font-size: 1.5rem;
           max-width: 310px;
         }
 
         @media (max-width: $mobile-breakpoint) {
-          font-size: 1rem;
+          font-size: 1.5rem;
           max-width: 310px;
         }
       }
 
-      .btn-my {
-        color: $color-casiBlanco;
-        font-size: 20px;
-        padding: 0.5em 1.2em;
-        background: rgba(0, 0, 0, 0);
-        border: 2px solid;
-        border-color: $color-casiBlanco;
-        transition: all 1s ease;
-        position: relative;
-        padding: 1rem 4.2rem;
-        font-weight: 400;
-        text-decoration: none;
-        margin: 60px 0 20px 0;
+      &-text {
+        font-family: $main-font;
+        width: 800px;
+        height: auto;
+        margin-left: 30px;
 
-        &:hover {
-          background: $color-casiBlanco;
-          color: $color-negro;
+        .myName {
+          font-size: 1.5rem;
+          color: $color-casiBlanco;
+          margin-bottom: 30px;
+
+          @media (max-width: $minimobile-breakpoint) {
+            overflow-x: none;
+            padding-top: 0;
+            margin-top: 0;
+            border: none;
+            font-size: 1rem;
+            max-width: 310px;
+          }
+
+          @media (max-width: $mobile-breakpoint) {
+            font-size: 1rem;
+            max-width: 310px;
+          }
+        }
+
+        .btn-my {
+          color: $color-casiBlanco;
+          font-size: 20px;
+          padding: 0.5em 1.2em;
+          background: rgba(0, 0, 0, 0);
+          border: 2px solid;
+          border-color: $color-casiBlanco;
+          transition: all 1s ease;
+          position: relative;
+          padding: 1rem 4.2rem;
+          font-weight: 400;
           text-decoration: none;
-        }
+          margin: 60px 0 20px 0;
 
-        @media (max-width: $minimobile-breakpoint) {
-          display: none;
-        }
+          &:hover {
+            background: $color-casiBlanco;
+            color: $color-negro;
+            text-decoration: none;
+          }
 
-        @media (max-width: $mobile-breakpoint) {
-          display: none;
+          @media (max-width: $minimobile-breakpoint) {
+            display: none;
+          }
+
+          @media (max-width: $mobile-breakpoint) {
+            display: none;
+          }
         }
       }
     }
   }
-}
 
-.section {
-  margin-top: 5em;
+  .section {
+    margin-top: 5em;
 
-  .title {
-    font-family: $main-font;
-    font-size: 4.3rem;
-    color: $color-casiBlanco;
-    padding-left: 30px;
-    padding-bottom: 1em;
-  }
-
-  &-content {
-    max-width: 100vw;
-    margin: 10px;
-    box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-wrap: wrap;
-
-    @media screen {
+    .title {
+      font-family: $main-font;
+      font-size: 4.3rem;
+      color: $color-casiBlanco;
+      padding-left: 30px;
+      padding-bottom: 1em;
     }
 
-    &-images {
-      width: 600px;
-      margin: 0 auto 20px;
+    &-content {
+      max-width: 100vw;
+      margin: 10px;
+      box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
       display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 10px;
+      flex-wrap: wrap;
 
-      &:hover {
-        transform: scale(1.03);
-      }
+      @media screen {}
 
-      img {
-        width: 100%;
-        transition: transform 1s all;
-        cursor: pointer;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-      }
-
-      &-indiv {
-        width: 100%;
-        height: 40px;
-        background-color: #111;
-        opacity: 0.9;
+      &-images {
+        width: 600px;
+        margin: 0 auto 20px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+        border-radius: 10px;
 
-        .other {
-          font-size: 2em;
-          color: #fafafa;
+        &:hover {
+          transform: scale(1.03);
         }
 
-        @media (max-width: $minimobile-breakpoint) {
-          display: none;
+        img {
+          width: 100%;
+          transition: transform 1s all;
+          cursor: pointer;
+          border-top-right-radius: 10px;
+          border-top-left-radius: 10px;
         }
 
-        @media (max-width: $mobile-breakpoint) {
-          min-width: none;
+        &-indiv {
+          width: 100%;
+          height: 40px;
+          background-color: #111;
+          opacity: 0.9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+
+          .other {
+            font-size: 2em;
+            color: #fafafa;
+          }
+
+          @media (max-width: $minimobile-breakpoint) {
+            display: none;
+          }
+
+          @media (max-width: $mobile-breakpoint) {
+            min-width: none;
+          }
         }
       }
     }
   }
-}
 
-.contact {
-  max-width: 700px;
-  height: 400px;
-  margin-top: 90px;
-  margin-left: 30px;
+  .contact {
+    max-width: 700px;
+    height: 400px;
+    margin-top: 90px;
+    margin-left: 30px;
 
-  .Escribime {
-    font-size: 4rem;
-    color: $color-casiBlanco;
-    margin-bottom: 50px;
-  }
-
-  .btn-contact {
-    color: $color-casiBlanco;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0);
-    border: 2px solid;
-    border-color: $color-casiBlanco;
-    transition: all 1s ease;
-    position: relative;
-    padding: 1rem 4.2rem;
-    font-weight: 400;
-    text-decoration: none;
-
-    &:hover {
-      background: $color-casiBlanco;
-      color: $color-negro;
-      text-decoration: none;
-    }
-  }
-}
-
-.footer {
-  max-width: 99vw;
-  background-color: $color-negro;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  &-a {
-    margin: 1em;
-    font-size: 2em;
-
-    a {
+    .Escribime {
+      font-size: 4rem;
       color: $color-casiBlanco;
-      transition: transform 2s all;
+      margin-bottom: 50px;
+    }
 
-      .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
-        transition: transform 2s all;
-        color: $color-casiBlanco;
+    .btn-contact {
+      color: $color-casiBlanco;
+      font-size: 20px;
+      background: rgba(0, 0, 0, 0);
+      border: 2px solid;
+      border-color: $color-casiBlanco;
+      transition: all 1s ease;
+      position: relative;
+      padding: 1rem 4.2rem;
+      font-weight: 400;
+      text-decoration: none;
 
-        &:hover {
-          transform: scale(1.09);
-          color: $color-grisTopo;
-          text-decoration: none;
-        }
-      }
-
-      .far .fa-envelope {
-        transition: transform 2s all;
+      &:hover {
+        background: $color-casiBlanco;
         color: $color-negro;
-
-        &:hover {
-          transform: scale(1.09);
-          color: $color-grisTopo;
-        }
-      }
-
-      .fas .fa-arrow-up {
-        transition: transform 2s all;
-        //transition: transform 2s all;
-
-        &:hover {
-          transform: scale(1.09);
-          color: $color-grisTopo;
-        }
+        text-decoration: none;
       }
     }
   }
 
-  .fa-arrow-up {
-    justify-content: flex-end;
-    color: $color-negro;
-    font-size: 2rem;
+  .footer {
+    max-width: 99vw;
+    background-color: $color-negro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    &:hover {
-      transform: scale(1.09);
-      color: $color-grisTopo;
+    &-a {
+      margin: 1em;
+      font-size: 2em;
+
+      a {
+        color: $color-casiBlanco;
+        transition: transform 2s all;
+
+        .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
+          transition: transform 2s all;
+          color: $color-casiBlanco;
+
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
+            text-decoration: none;
+          }
+        }
+
+        .far .fa-envelope {
+          transition: transform 2s all;
+          color: $color-negro;
+
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
+          }
+        }
+
+        .fas .fa-arrow-up {
+          transition: transform 2s all;
+          //transition: transform 2s all;
+
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
+          }
+        }
+      }
+    }
+
+    .fa-arrow-up {
+      justify-content: flex-end;
+      color: $color-negro;
+      font-size: 2rem;
+
+      &:hover {
+        transform: scale(1.09);
+        color: $color-grisTopo;
+      }
     }
   }
 }

@@ -137,6 +137,24 @@ html body #myBtn:hover {
   background-color: #555;
 }
 
+@media (max-width: 320px) {
+  html body #myBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  html body #myBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  html body #myBtn {
+    display: none;
+  }
+}
+
 html body .header {
   min-width: 100vw;
   min-height: 40px;
@@ -254,9 +272,6 @@ html body .main-text {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 1.5em;
-    min-width: 100%;
-    padding: 1em;
   }
 }
 
@@ -279,8 +294,8 @@ html body .main-text-principal {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 1em;
-    min-width: 100vw;
+    font-size: 2em;
+    max-width: 100%;
     background-image: none;
     overflow-x: hidden;
   }
@@ -411,20 +426,20 @@ html body .main-text-principal-btn:hover {
   }
 }
 
-html .about {
+html body .about {
   color: #fff;
   min-width: 100vw;
   min-height: 100vh;
   height: 100vh;
 }
 
-html .about .quien {
+html body .about .quien {
   font-size: 4.3rem;
   margin: 50px 0 50px 30px;
 }
 
 @media (max-width: 320px) {
-  html .about .quien {
+  html body .about .quien {
     padding: 5px;
     padding-top: 0;
     margin-top: 0;
@@ -435,28 +450,28 @@ html .about .quien {
 }
 
 @media (max-width: 568px) {
-  html .about .quien {
+  html body .about .quien {
     font-size: 1.5rem;
     max-width: 310px;
   }
 }
 
-html .about-text {
+html body .about-text {
   font-family: "Roboto", sans-serif;
   width: 800px;
   height: auto;
   margin-left: 30px;
 }
 
-html .about-text .myName {
+html body .about-text .myName {
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 30px;
 }
 
 @media (max-width: 320px) {
-  html .about-text .myName {
-    padding: 5px;
+  html body .about-text .myName {
+    overflow-x: none;
     padding-top: 0;
     margin-top: 0;
     border: none;
@@ -466,13 +481,13 @@ html .about-text .myName {
 }
 
 @media (max-width: 568px) {
-  html .about-text .myName {
+  html body .about-text .myName {
     font-size: 1rem;
     max-width: 310px;
   }
 }
 
-html .about-text .btn-my {
+html body .about-text .btn-my {
   color: #fff;
   font-size: 20px;
   padding: 0.5em 1.2em;
@@ -488,29 +503,29 @@ html .about-text .btn-my {
   margin: 60px 0 20px 0;
 }
 
-html .about-text .btn-my:hover {
+html body .about-text .btn-my:hover {
   background: #fff;
   color: #222;
   text-decoration: none;
 }
 
 @media (max-width: 320px) {
-  html .about-text .btn-my {
+  html body .about-text .btn-my {
     display: none;
   }
 }
 
 @media (max-width: 568px) {
-  html .about-text .btn-my {
+  html body .about-text .btn-my {
     display: none;
   }
 }
 
-.section {
+html .section {
   margin-top: 5em;
 }
 
-.section .title {
+html .section .title {
   font-family: "Roboto", sans-serif;
   font-size: 4.3rem;
   color: #fff;
@@ -518,7 +533,7 @@ html .about-text .btn-my:hover {
   padding-bottom: 1em;
 }
 
-.section-content {
+html .section-content {
   max-width: 100vw;
   margin: 10px;
   -webkit-box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
@@ -530,7 +545,7 @@ html .about-text .btn-my:hover {
       flex-wrap: wrap;
 }
 
-.section-content-images {
+html .section-content-images {
   width: 600px;
   margin: 0 auto 20px;
   display: -webkit-box;
@@ -549,12 +564,12 @@ html .about-text .btn-my:hover {
   border-radius: 10px;
 }
 
-.section-content-images:hover {
+html .section-content-images:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
 
-.section-content-images img {
+html .section-content-images img {
   width: 100%;
   -webkit-transition: -webkit-transform 1s all;
   transition: -webkit-transform 1s all;
@@ -565,7 +580,7 @@ html .about-text .btn-my:hover {
   border-top-left-radius: 10px;
 }
 
-.section-content-images-indiv {
+html .section-content-images-indiv {
   width: 100%;
   height: 40px;
   background-color: #111;
@@ -583,37 +598,37 @@ html .about-text .btn-my:hover {
   border-bottom-right-radius: 10px;
 }
 
-.section-content-images-indiv .other {
+html .section-content-images-indiv .other {
   font-size: 2em;
   color: #fafafa;
 }
 
 @media (max-width: 320px) {
-  .section-content-images-indiv {
+  html .section-content-images-indiv {
     display: none;
   }
 }
 
 @media (max-width: 568px) {
-  .section-content-images-indiv {
+  html .section-content-images-indiv {
     min-width: none;
   }
 }
 
-.contact {
+html .contact {
   max-width: 700px;
   height: 400px;
   margin-top: 90px;
   margin-left: 30px;
 }
 
-.contact .Escribime {
+html .contact .Escribime {
   font-size: 4rem;
   color: #fff;
   margin-bottom: 50px;
 }
 
-.contact .btn-contact {
+html .contact .btn-contact {
   color: #fff;
   font-size: 20px;
   background: rgba(0, 0, 0, 0);
@@ -627,13 +642,13 @@ html .about-text .btn-my:hover {
   text-decoration: none;
 }
 
-.contact .btn-contact:hover {
+html .contact .btn-contact:hover {
   background: #fff;
   color: #222;
   text-decoration: none;
 }
 
-.footer {
+html .footer {
   max-width: 99vw;
   background-color: #222;
   display: -webkit-box;
@@ -646,12 +661,12 @@ html .about-text .btn-my:hover {
           justify-content: center;
 }
 
-.footer-a {
+html .footer-a {
   margin: 1em;
   font-size: 2em;
 }
 
-.footer-a a {
+html .footer-a a {
   color: #fff;
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
@@ -659,7 +674,7 @@ html .about-text .btn-my:hover {
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-.footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
+html .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -667,14 +682,14 @@ html .about-text .btn-my:hover {
   color: #fff;
 }
 
-.footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance:hover {
+html .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #737373;
   text-decoration: none;
 }
 
-.footer-a a .far .fa-envelope {
+html .footer-a a .far .fa-envelope {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -682,26 +697,26 @@ html .about-text .btn-my:hover {
   color: #222;
 }
 
-.footer-a a .far .fa-envelope:hover {
+html .footer-a a .far .fa-envelope:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #737373;
 }
 
-.footer-a a .fas .fa-arrow-up {
+html .footer-a a .fas .fa-arrow-up {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
   transition: transform 2s all, -webkit-transform 2s all;
 }
 
-.footer-a a .fas .fa-arrow-up:hover {
+html .footer-a a .fas .fa-arrow-up:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #737373;
 }
 
-.footer .fa-arrow-up {
+html .footer .fa-arrow-up {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -709,7 +724,7 @@ html .about-text .btn-my:hover {
   font-size: 2rem;
 }
 
-.footer .fa-arrow-up:hover {
+html .footer .fa-arrow-up:hover {
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
   color: #737373;
