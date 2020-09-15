@@ -283,6 +283,23 @@ html body .main-text-principal {
   }
 }
 
+html body .main-text-principal img {
+  margin-top: -100px;
+  float: right;
+}
+
+@media (max-width: 320px) {
+  html body .main-text-principal img {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  html body .main-text-principal img {
+    display: none;
+  }
+}
+
 html body .main-text-principal-h1 {
   color: #fff;
   font-family: "Roboto", sans-serif;

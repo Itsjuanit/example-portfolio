@@ -252,11 +252,27 @@ html {
           overflow-x: hidden;
         }
 
+        img {
+          margin-top: -100px;
+          float: right;
+
+          @media (max-width: $minimobile-breakpoint) {
+            display: none;
+
+          }
+
+          @media (max-width: $mobile-breakpoint) {
+            display: none;
+
+          }
+        }
+
         &-h1 {
           color: $color-casiBlanco;
           font-family: $main-font;
           font-size: 4.5rem;
           line-height: 1em;
+
 
           @media (max-width: $minimobile-breakpoint) {
             padding: 0;
