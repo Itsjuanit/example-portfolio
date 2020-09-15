@@ -15,7 +15,7 @@
   --font-size-medium-1: 3.6rem;
   --font-size-large: 5.5rem;
   --font-size-huge: 7.5rem;
-  --font-stack: 'Hk Grotesk', sans-serif;
+  --font-stack: "Hk Grotesk", sans-serif;
   --line-height-normal: 1.7;
   --line-height-small: 1.2;
   --black: #000;
@@ -115,6 +115,28 @@ html body::-webkit-scrollbar-track:hover, html body::-webkit-scrollbar-track:act
   }
 }
 
+html body #myBtn {
+  width: 50px;
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 100px;
+}
+
+html body #myBtn:hover {
+  background-color: #555;
+}
+
 html body .header {
   min-width: 100vw;
   min-height: 40px;
@@ -191,13 +213,13 @@ html body .header-nav .internos {
   padding: 1rem 0.5rem;
   text-decoration: none;
   color: inherit;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   color: #fff;
 }
 
 html body .header-nav .internos::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
