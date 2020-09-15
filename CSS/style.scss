@@ -25,12 +25,6 @@ sans-serif;
 html {
   scroll-behavior: smooth;
 
-  @media (max-width: 1000px) {
-    html {
-      font-size: 52%;
-    }
-  }
-
   body {
     font-family: $main-font;
     background-color: $color-negro;

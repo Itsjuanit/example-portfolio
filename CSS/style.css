@@ -12,12 +12,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 1000px) {
-  html html {
-    font-size: 52%;
-  }
-}
-
 html body {
   font-family: "Roboto", sans-serif;
   background-color: #222;
