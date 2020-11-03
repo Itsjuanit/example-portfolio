@@ -446,17 +446,59 @@ html {
 
         &-images {
           width: 600px;
+          height: 300px;
+          border: 1px solid white;
           margin: 0 auto 20px;
           display: flex;
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          border-radius: 10px;
+
 
           &:hover {
             transform: scale(1.03);
+            border: none;
+            background: linear-gradient(-45deg, #fff, #fafafa, #2c5364);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+
+            @keyframes gradient {
+              0% {
+                background-position: 0% 50%;
+              }
+
+              50% {
+                background-position: 100% 50%;
+              }
+
+              100% {
+                background-position: 0% 50%;
+              }
+            }
           }
 
+          .text-section {
+            font-size: 2rem;
+
+            &:hover {
+              font-size: 4rem;
+              text-transform: uppercase;
+            }
+
+
+            a {
+              text-decoration: none;
+              color: #fff;
+
+              &:hover{
+                color: #222;
+              }
+            }
+          }
+        }
+
+
+        /*
           img {
             width: 100%;
             transition: transform 1s all;
@@ -488,128 +530,127 @@ html {
             @media (max-width: $mobile-breakpoint) {
               min-width: none;
             }
-          }
-        }
+          }*/
       }
     }
+  }
 
-    .contact {
-      max-width: 700px;
-      height: 400px;
-      margin-top: 90px;
-      margin-left: 30px;
+  .contact {
+    max-width: 700px;
+    height: 400px;
+    margin-top: 90px;
+    margin-left: 30px;
 
-      @media (max-width: $minimobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-      }
-
-      @media (max-width: $mobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-      }
-
-      .Escribime {
-        font-size: 4rem;
-        color: $color-casiBlanco;
-        margin-bottom: 50px;
-      }
-
-      .btn-contact {
-        color: $color-casiBlanco;
-        font-size: 20px;
-        background: rgba(0, 0, 0, 0);
-        border: 2px solid;
-        border-color: $color-casiBlanco;
-        transition: all 1s ease;
-        position: relative;
-        padding: 1rem 4.2rem;
-        font-weight: 400;
-        text-decoration: none;
-
-        &:hover {
-          background: $color-casiBlanco;
-          color: $color-negro;
-          text-decoration: none;
-        }
-      }
-    }
-
-    .footer {
-      max-width: 100vw;
-      background-color: $color-negro;
+    @media (max-width: $minimobile-breakpoint) {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
-      @media (max-width: $minimobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        margin: 0 auto;
-      }
+    @media (max-width: $mobile-breakpoint) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
-      @media (max-width: $mobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        margin: 0 auto;
-      }
+    .Escribime {
+      font-size: 4rem;
+      color: $color-casiBlanco;
+      margin-bottom: 50px;
+    }
 
-      &-a {
-        margin: 1em;
-        font-size: 2em;
+    .btn-contact {
+      color: $color-casiBlanco;
+      font-size: 20px;
+      background: rgba(0, 0, 0, 0);
+      border: 2px solid;
+      border-color: $color-casiBlanco;
+      transition: all 1s ease;
+      position: relative;
+      padding: 1rem 4.2rem;
+      font-weight: 400;
+      text-decoration: none;
 
-        a {
-          color: $color-casiBlanco;
-          transition: transform 2s all;
-
-          .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
-            transition: transform 2s all;
-            color: $color-casiBlanco;
-
-            &:hover {
-              transform: scale(1.09);
-              color: $color-grisTopo;
-              text-decoration: none;
-            }
-          }
-
-          .far .fa-envelope {
-            transition: transform 2s all;
-            color: $color-negro;
-
-            &:hover {
-              transform: scale(1.09);
-              color: $color-grisTopo;
-            }
-          }
-
-          .fas .fa-arrow-up {
-            transition: transform 2s all;
-            //transition: transform 2s all;
-
-            &:hover {
-              transform: scale(1.09);
-              color: $color-grisTopo;
-            }
-          }
-        }
-      }
-
-      .fa-arrow-up {
-        justify-content: flex-end;
+      &:hover {
+        background: $color-casiBlanco;
         color: $color-negro;
-        font-size: 2rem;
+        text-decoration: none;
+      }
+    }
+  }
 
-        &:hover {
-          transform: scale(1.09);
-          color: $color-grisTopo;
+  .footer {
+    max-width: 100vw;
+    background-color: $color-negro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: $minimobile-breakpoint) {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      margin: 0 auto;
+    }
+
+    &-a {
+      margin: 1em;
+      font-size: 2em;
+
+      a {
+        color: $color-casiBlanco;
+        transition: transform 2s all;
+
+        .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
+          transition: transform 2s all;
+          color: $color-casiBlanco;
+
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
+            text-decoration: none;
+          }
         }
+
+        .far .fa-envelope {
+          transition: transform 2s all;
+          color: $color-negro;
+
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
+          }
+        }
+
+        .fas .fa-arrow-up {
+          transition: transform 2s all;
+          //transition: transform 2s all;
+
+          &:hover {
+            transform: scale(1.09);
+            color: $color-grisTopo;
+          }
+        }
+      }
+    }
+
+    .fa-arrow-up {
+      justify-content: flex-end;
+      color: $color-negro;
+      font-size: 2rem;
+
+      &:hover {
+        transform: scale(1.09);
+        color: $color-grisTopo;
       }
     }
   }
