@@ -376,7 +376,7 @@ html body .main-text-principal-h1 {
 
 @media (max-width: 568px) {
   html body .main-text-principal-h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -390,6 +390,7 @@ html body .main-text-principal-subtitle {
 
 @media (max-width: 320px) {
   html body .main-text-principal-subtitle {
+    font-size: 2rem;
     padding: 0;
     padding-top: 0;
     margin-top: 0;
@@ -399,6 +400,7 @@ html body .main-text-principal-subtitle {
 
 @media (max-width: 568px) {
   html body .main-text-principal-subtitle {
+    font-size: 2rem;
     padding: 0;
     padding-top: 0;
     margin-top: 0;
@@ -472,6 +474,39 @@ html body .about .quien {
   margin: 50px 0 50px 30px;
 }
 
+@media (max-width: 320px) {
+  html body .about .quien {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  html body .about .quien {
+    font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 html body .about-text {
   font-family: "Roboto", sans-serif;
   width: 800px;
@@ -483,42 +518,6 @@ html body .about-text .myName {
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 30px;
-}
-
-@media (max-width: 320px) {
-  html body .about-text .myName {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-    max-width: 100%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 568px) {
-  html body .about-text .myName {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 0 auto;
-    max-width: 100%;
-    text-align: center;
-  }
 }
 
 html body .about-text .btn-my {
@@ -598,6 +597,39 @@ html body .section .title {
   color: #fff;
   padding-left: 30px;
   padding-bottom: 1em;
+}
+
+@media (max-width: 320px) {
+  html body .section .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  html body .section .title {
+    font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 html body .section-content {
@@ -760,6 +792,39 @@ html .contact .Escribime {
   font-size: 4rem;
   color: #fff;
   margin-bottom: 50px;
+}
+
+@media (max-width: 320px) {
+  html .contact .Escribime {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  html .contact .Escribime {
+    font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 html .contact .btn-contact {
