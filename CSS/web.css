@@ -124,7 +124,7 @@ html body #myBtn {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #000000;
+  background-color: #222;
   color: #fff;
   cursor: pointer;
   padding: 4px;
@@ -132,7 +132,8 @@ html body #myBtn {
 }
 
 html body #myBtn:hover {
-  background-color: #555;
+  background-color: #92e3a9;
+  color: #222;
 }
 
 @media (max-width: 320px) {
@@ -254,7 +255,7 @@ html body .header-nav .internos:hover {
 html body .header-nav .internos:hover::after {
   right: 0;
   height: 1px;
-  background: #fff;
+  background: #92e3a9;
 }
 
 html body .section {
@@ -433,15 +434,15 @@ html .footer-a {
   font-size: 2em;
 }
 
+html .footer-a:hover {
+  color: #92e3a9;
+}
+
 html .footer-a a {
   color: #fff;
-  -webkit-transition: -webkit-transform 2s all;
-  transition: -webkit-transform 2s all;
-  transition: transform 2s all;
-  transition: transform 2s all, -webkit-transform 2s all;
 }
 
-html .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
+html .footer-a a .fab {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -449,51 +450,9 @@ html .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance {
   color: #fff;
 }
 
-html .footer-a a .fab .fa-github .fa-linkedin-in .fa-dribbble .fa-behance:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  color: #737373;
-  text-decoration: none;
-}
-
-html .footer-a a .far .fa-envelope {
-  -webkit-transition: -webkit-transform 2s all;
-  transition: -webkit-transform 2s all;
-  transition: transform 2s all;
-  transition: transform 2s all, -webkit-transform 2s all;
-  color: #222;
-}
-
-html .footer-a a .far .fa-envelope:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  color: #737373;
-}
-
-html .footer-a a .fas .fa-arrow-up {
-  -webkit-transition: -webkit-transform 2s all;
-  transition: -webkit-transform 2s all;
-  transition: transform 2s all;
-  transition: transform 2s all, -webkit-transform 2s all;
-}
-
-html .footer-a a .fas .fa-arrow-up:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  color: #737373;
-}
-
-html .footer .fa-arrow-up {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  color: #222;
-  font-size: 2rem;
-}
-
-html .footer .fa-arrow-up:hover {
-  -webkit-transform: scale(1.09);
-          transform: scale(1.09);
-  color: #737373;
+html .footer-a a .fab:hover {
+  color: #92e3a9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=web.css.map */
