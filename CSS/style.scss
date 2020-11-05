@@ -470,17 +470,17 @@ html {
         display: flex;
         flex-wrap: wrap;
 
-
-
         &-images {
           width: 600px;
           height: 300px;
-          border: 1px solid white;
+          border: 1px solid $color-casiBlanco;
           margin: 0 auto 20px;
           display: flex;
           justify-content: center;
           flex-direction: column;
           align-items: center;
+          text-decoration: none;
+          color: $color-casiBlanco;
 
 
           &:hover {
@@ -524,41 +524,6 @@ html {
             }
           }
         }
-
-
-        /*
-          img {
-            width: 100%;
-            transition: transform 1s all;
-            cursor: pointer;
-            border-top-right-radius: 10px;
-            border-top-left-radius: 10px;
-          }
-
-          &-indiv {
-            width: 100%;
-            height: 40px;
-            background-color: #111;
-            opacity: 0.9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-
-            .other {
-              font-size: 2em;
-              color: #fafafa;
-            }
-
-            @media (max-width: $minimobile-breakpoint) {
-              display: none;
-            }
-
-            @media (max-width: $mobile-breakpoint) {
-              min-width: none;
-            }
-          }*/
       }
     }
   }
