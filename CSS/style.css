@@ -46,7 +46,7 @@ html {
 
 html body {
   font-family: "Roboto", sans-serif;
-  background-color: #222;
+  background-color: #212121;
   overflow-x: hidden;
 }
 
@@ -124,7 +124,7 @@ html body #myBtn {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: #222;
+  background-color: #212121;
   color: #fff;
   cursor: pointer;
   padding: 4px;
@@ -133,7 +133,7 @@ html body #myBtn {
 
 html body #myBtn:hover {
   background-color: #92e3a9;
-  color: #222;
+  color: #212121;
 }
 
 @media (max-width: 320px) {
@@ -304,6 +304,7 @@ html body .main-text-principal {
   padding-left: 3em;
   margin-top: 3em;
   margin-right: 6em;
+  /* ANIMACIONES SVG*/
 }
 
 @media (max-width: 568px) {
@@ -344,20 +345,107 @@ html body .main-text-principal {
   }
 }
 
-html body .main-text-principal img {
+html body .main-text-principal .img {
   margin-top: -100px;
   float: right;
 }
 
 @media (max-width: 320px) {
-  html body .main-text-principal img {
+  html body .main-text-principal .img {
     display: none;
   }
 }
 
 @media (max-width: 568px) {
-  html body .main-text-principal img {
+  html body .main-text-principal .img {
     display: none;
+  }
+}
+
+html body .main-text-principal #Exigual {
+  -webkit-animation: hithere 1s ease infinite;
+          animation: hithere 1s ease infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes hithere {
+  30% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg) scale(1.2);
+            transform: rotate(-20deg) scale(1.2);
+  }
+}
+
+@keyframes hithere {
+  30% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  60% {
+    -webkit-transform: rotate(-20deg) scale(1.2);
+            transform: rotate(-20deg) scale(1.2);
+  }
+}
+
+html body .main-text-principal #If {
+  -webkit-animation: bounce 2s ease infinite;
+          animation: bounce 2s ease infinite;
+}
+
+@-webkit-keyframes bounce {
+  70% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  80% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+}
+
+@keyframes bounce {
+  70% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  80% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+}
+
+html body .main-text-principal #Igual {
+  -webkit-animation: pulse 1s infinite ease-in-out alternate;
+          animation: pulse 1s infinite ease-in-out alternate;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -407,7 +495,7 @@ html body .main-text-principal-subtitle {
   }
 }
 
-html body .main-text-principal-btn {
+html body .main-text-btn {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -423,14 +511,14 @@ html body .main-text-principal-btn {
   text-decoration: none;
 }
 
-html body .main-text-principal-btn:hover {
+html body .main-text-btn:hover {
   background: #92e3a9;
-  color: #222;
+  color: #212121;
   text-decoration: none;
   border: #92e3a9;
 }
 
-html body .about {
+html .about {
   color: #fff;
   min-width: 100vw;
   min-height: 100vh;
@@ -438,7 +526,7 @@ html body .about {
 }
 
 @media (max-width: 320px) {
-  html body .about {
+  html .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -454,7 +542,7 @@ html body .about {
 }
 
 @media (max-width: 568px) {
-  html body .about {
+  html .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -469,13 +557,13 @@ html body .about {
   }
 }
 
-html body .about .quien {
+html .about .quien {
   font-size: 4.3rem;
   margin: 50px 0 50px 30px;
 }
 
 @media (max-width: 320px) {
-  html body .about .quien {
+  html .about .quien {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -491,7 +579,7 @@ html body .about .quien {
 }
 
 @media (max-width: 568px) {
-  html body .about .quien {
+  html .about .quien {
     font-size: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -507,20 +595,20 @@ html body .about .quien {
   }
 }
 
-html body .about-text {
+html .about-text {
   font-family: "Roboto", sans-serif;
   width: 800px;
   height: auto;
   margin-left: 30px;
 }
 
-html body .about-text .myName {
+html .about-text .myName {
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 30px;
 }
 
-html body .about-text .btn-my {
+html .about-text .btn-my {
   color: #fff;
   font-size: 20px;
   padding: 0.5em 1.2em;
@@ -536,31 +624,31 @@ html body .about-text .btn-my {
   margin: 60px 0 20px 0;
 }
 
-html body .about-text .btn-my:hover {
+html .about-text .btn-my:hover {
   background: #92e3a9;
-  color: #222;
+  color: #212121;
   text-decoration: none;
   border: #92e3a9;
 }
 
 @media (max-width: 320px) {
-  html body .about-text .btn-my {
+  html .about-text .btn-my {
     display: none;
   }
 }
 
 @media (max-width: 568px) {
-  html body .about-text .btn-my {
+  html .about-text .btn-my {
     display: none;
   }
 }
 
-html body .section {
+html .section {
   margin-top: 5em;
 }
 
 @media (max-width: 320px) {
-  html body .section {
+  html .section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -576,7 +664,7 @@ html body .section {
 }
 
 @media (max-width: 568px) {
-  html body .section {
+  html .section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -591,7 +679,7 @@ html body .section {
   }
 }
 
-html body .section .title {
+html .section .title {
   font-family: "Roboto", sans-serif;
   font-size: 4.3rem;
   color: #fff;
@@ -600,7 +688,7 @@ html body .section .title {
 }
 
 @media (max-width: 320px) {
-  html body .section .title {
+  html .section .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -616,7 +704,7 @@ html body .section .title {
 }
 
 @media (max-width: 568px) {
-  html body .section .title {
+  html .section .title {
     font-size: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -632,7 +720,7 @@ html body .section .title {
   }
 }
 
-html body .section-content {
+html .section-content {
   max-width: 100vw;
   margin: 10px;
   -webkit-box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
@@ -644,7 +732,7 @@ html body .section-content {
       flex-wrap: wrap;
 }
 
-html body .section-content-images {
+html .section-content-images {
   width: 600px;
   height: 300px;
   border: 1px solid #fff;
@@ -666,7 +754,7 @@ html body .section-content-images {
   color: #fff;
 }
 
-html body .section-content-images:hover {
+html .section-content-images:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   border: none;
@@ -700,25 +788,25 @@ html body .section-content-images:hover {
   }
 }
 
-html body .section-content-images .text-section {
+html .section-content-images .text-section {
   font-size: 2rem;
 }
 
-html body .section-content-images .text-section:hover {
+html .section-content-images .text-section:hover {
   font-size: 4rem;
   text-transform: uppercase;
 }
 
-html body .section-content-images .text-section a {
+html .section-content-images .text-section a {
   text-decoration: none;
   color: #fff;
 }
 
-html body .section-content-images .text-section a:hover {
+html .section-content-images .text-section a:hover {
   color: #fff;
 }
 
-html .contact {
+.contact {
   max-width: 700px;
   height: 400px;
   margin-top: 90px;
@@ -726,7 +814,7 @@ html .contact {
 }
 
 @media (max-width: 320px) {
-  html .contact {
+  .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -742,7 +830,7 @@ html .contact {
 }
 
 @media (max-width: 568px) {
-  html .contact {
+  .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -757,14 +845,14 @@ html .contact {
   }
 }
 
-html .contact .Escribime {
+.contact .Escribime {
   font-size: 4rem;
   color: #fff;
   margin-bottom: 50px;
 }
 
 @media (max-width: 320px) {
-  html .contact .Escribime {
+  .contact .Escribime {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -780,7 +868,7 @@ html .contact .Escribime {
 }
 
 @media (max-width: 568px) {
-  html .contact .Escribime {
+  .contact .Escribime {
     font-size: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -796,7 +884,7 @@ html .contact .Escribime {
   }
 }
 
-html .contact .btn-contact {
+.contact .btn-contact {
   color: #fff;
   font-size: 20px;
   background: rgba(0, 0, 0, 0);
@@ -810,16 +898,16 @@ html .contact .btn-contact {
   text-decoration: none;
 }
 
-html .contact .btn-contact:hover {
+.contact .btn-contact:hover {
   background: #92e3a9;
-  color: #222;
+  color: #212121;
   text-decoration: none;
   border: none;
 }
 
-html .footer {
+.footer {
   max-width: 100vw;
-  background-color: #222;
+  background-color: #212121;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,7 +919,7 @@ html .footer {
 }
 
 @media (max-width: 320px) {
-  html .footer {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -847,7 +935,7 @@ html .footer {
 }
 
 @media (max-width: 568px) {
-  html .footer {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -862,20 +950,20 @@ html .footer {
   }
 }
 
-html .footer-a {
+.footer-a {
   margin: 1em;
   font-size: 2em;
 }
 
-html .footer-a:hover {
+.footer-a:hover {
   color: #92e3a9;
 }
 
-html .footer-a a {
+.footer-a a {
   color: #fff;
 }
 
-html .footer-a a .fab {
+.footer-a a .fab {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -883,7 +971,7 @@ html .footer-a a .fab {
   color: #fff;
 }
 
-html .footer-a a .fab:hover {
+.footer-a a .fab:hover {
   color: #92e3a9;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

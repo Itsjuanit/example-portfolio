@@ -16,7 +16,7 @@ $color-verde: #92e3a9;
 $color-gris: #bfbfbf;
 $color-grisTopo: #737373;
 $color-grisOscuro: #404040;
-$color-negro: #222;
+$color-negro: #212121;
 
 /*FONT*/
 $main-font: "Roboto",
@@ -252,7 +252,7 @@ html {
           margin: 0 auto;
         }
 
-        img {
+        .img {
           margin-top: -100px;
           float: right;
 
@@ -262,6 +262,54 @@ html {
 
           @media (max-width: $mobile-breakpoint) {
             display: none;
+          }
+        }
+
+        /* ANIMACIONES SVG*/
+
+        #Exigual {
+          animation: hithere 1s ease infinite;
+          transform-origin: center;
+          transform-box: fill-box;
+
+          @keyframes hithere {
+            30% {
+              transform: scale(1.2);
+            }
+
+            60% {
+              transform: rotate(-20deg) scale(1.2);
+            }
+          }
+        }
+
+        #If {
+          animation: bounce 2s ease infinite;
+
+          @keyframes bounce {
+            70% {
+              transform: translateY(0%);
+            }
+
+            80% {
+              transform: translateY(-15%);
+            }
+          }
+        }
+
+        #Igual {
+          animation: pulse 1s infinite ease-in-out alternate;
+          transform-origin: center;
+          transform-box: fill-box;
+
+          @keyframes pulse {
+            from {
+              transform: scale(0.8);
+            }
+
+            to {
+              transform: scale(1.2);
+            }
           }
         }
 
@@ -287,7 +335,6 @@ html {
           margin-top: 20px;
           margin-bottom: 40px;
 
-
           @media (max-width: $minimobile-breakpoint) {
             font-size: 2rem;
             padding: 0;
@@ -303,236 +350,38 @@ html {
             margin-top: 0;
           }
         }
-
-        &-btn {
-          color: $color-casiBlanco;
-          font-size: 20px;
-          font-weight: 500;
-          padding: 0.5em 1.2em;
-          background: rgba(0, 0, 0, 0);
-          border: 2px solid;
-          border-color: $color-casiBlanco;
-          transition: all 1s ease;
-          position: relative;
-          padding: 1rem 4.2rem;
-          font-weight: 400;
-          text-decoration: none;
-
-          &:hover {
-            background: $color-verde;
-            color: $color-negro;
-            text-decoration: none;
-            border: $color-verde;
-          }
-        }
-      }
-    }
-
-
-    .about {
-      color: $color-casiBlanco;
-      min-width: 100vw;
-      min-height: 100vh;
-      height: 100vh;
-
-      @media (max-width: $minimobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
       }
 
-      @media (max-width: $mobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-      }
-
-
-      .quien {
-        font-size: 4.3rem;
-        margin: 50px 0 50px 30px;
-
-
-        @media (max-width: $minimobile-breakpoint) {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          font-size: 2.5rem;
-        }
-
-        @media (max-width: $mobile-breakpoint) {
-          font-size: 2.5rem;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          text-align: center;
-        }
-      }
-
-      &-text {
-        font-family: $main-font;
-        width: 800px;
-        height: auto;
-        margin-left: 30px;
-
-        .myName {
-          font-size: 1.5rem;
-          color: $color-casiBlanco;
-          margin-bottom: 30px;
-
-          @media (max-width: $minimobile-breakpoint) {
-            
-          }
-
-          @media (max-width: $mobile-breakpoint) {
-            
-          }
-        }
-
-        .btn-my {
-          color: $color-casiBlanco;
-          font-size: 20px;
-          padding: 0.5em 1.2em;
-          background: rgba(0, 0, 0, 0);
-          border: 2px solid;
-          border-color: $color-casiBlanco;
-          transition: all 1s ease;
-          position: relative;
-          padding: 1rem 4.2rem;
-          font-weight: 400;
-          text-decoration: none;
-          margin: 60px 0 20px 0;
-
-          &:hover {
-            background: $color-verde;
-            color: $color-negro;
-            text-decoration: none;
-            border: $color-verde;
-          }
-
-          @media (max-width: $minimobile-breakpoint) {
-            display: none;
-          }
-
-          @media (max-width: $mobile-breakpoint) {
-            display: none;
-          }
-        }
-      }
-    }
-
-    .section {
-      margin-top: 5em;
-
-      @media (max-width: $minimobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-      }
-
-      @media (max-width: $mobile-breakpoint) {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0 auto;
-      }
-
-      .title {
-        font-family: $main-font;
-        font-size: 4.3rem;
+      &-btn {
         color: $color-casiBlanco;
-        padding-left: 30px;
-        padding-bottom: 1em;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0.5em 1.2em;
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid;
+        border-color: $color-casiBlanco;
+        transition: all 1s ease;
+        position: relative;
+        padding: 1rem 4.2rem;
+        font-weight: 400;
+        text-decoration: none;
 
-        @media (max-width: $minimobile-breakpoint) {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          font-size: 2.5rem;
-        }
-
-        @media (max-width: $mobile-breakpoint) {
-          font-size: 2.5rem;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          text-align: center;
-        }
-      }
-
-      &-content {
-        max-width: 100vw;
-        margin: 10px;
-        box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
-        display: flex;
-        flex-wrap: wrap;
-
-        &-images {
-          width: 600px;
-          height: 300px;
-          border: 1px solid $color-casiBlanco;
-          margin: 0 auto 20px;
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          align-items: center;
+        &:hover {
+          background: $color-verde;
+          color: $color-negro;
           text-decoration: none;
-          color: $color-casiBlanco;
-
-
-          &:hover {
-            transform: scale(1.03);
-            border: none;
-            background: linear-gradient(-45deg, #92e3a9, #37e263, #148230);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
-
-            @keyframes gradient {
-              0% {
-                background-position: 0% 50%;
-              }
-
-              50% {
-                background-position: 100% 50%;
-              }
-
-              100% {
-                background-position: 0% 50%;
-              }
-            }
-          }
-
-          .text-section {
-            font-size: 2rem;
-
-            &:hover {
-              font-size: 4rem;
-              text-transform: uppercase;
-            }
-
-
-            a {
-              text-decoration: none;
-              color: #fff;
-
-              &:hover {
-                color: #fff;
-              }
-            }
-          }
+          border: $color-verde;
         }
       }
     }
   }
 
-  .contact {
-    max-width: 700px;
-    height: 400px;
-    margin-top: 90px;
-    margin-left: 30px;
+
+  .about {
+    color: $color-casiBlanco;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
 
     @media (max-width: $minimobile-breakpoint) {
       display: flex;
@@ -548,10 +397,11 @@ html {
       margin: 0 auto;
     }
 
-    .Escribime {
-      font-size: 4rem;
-      color: $color-casiBlanco;
-      margin-bottom: 50px;
+
+    .quien {
+      font-size: 4.3rem;
+      margin: 50px 0 50px 30px;
+
 
       @media (max-width: $minimobile-breakpoint) {
         display: flex;
@@ -569,67 +419,260 @@ html {
       }
     }
 
-    .btn-contact {
-      color: $color-casiBlanco;
-      font-size: 20px;
-      background: rgba(0, 0, 0, 0);
-      border: 2px solid;
-      border-color: $color-casiBlanco;
-      transition: all 1s ease;
-      position: relative;
-      padding: 1rem 4.2rem;
-      font-weight: 400;
-      text-decoration: none;
+    &-text {
+      font-family: $main-font;
+      width: 800px;
+      height: auto;
+      margin-left: 30px;
 
-      &:hover {
-        background: $color-verde;
-        color: $color-negro;
+      .myName {
+        font-size: 1.5rem;
+        color: $color-casiBlanco;
+        margin-bottom: 30px;
+
+        @media (max-width: $minimobile-breakpoint) {}
+
+        @media (max-width: $mobile-breakpoint) {}
+      }
+
+      .btn-my {
+        color: $color-casiBlanco;
+        font-size: 20px;
+        padding: 0.5em 1.2em;
+        background: rgba(0, 0, 0, 0);
+        border: 2px solid;
+        border-color: $color-casiBlanco;
+        transition: all 1s ease;
+        position: relative;
+        padding: 1rem 4.2rem;
+        font-weight: 400;
         text-decoration: none;
-        border: none;
+        margin: 60px 0 20px 0;
+
+        &:hover {
+          background: $color-verde;
+          color: $color-negro;
+          text-decoration: none;
+          border: $color-verde;
+        }
+
+        @media (max-width: $minimobile-breakpoint) {
+          display: none;
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+          display: none;
+        }
       }
     }
   }
 
-  .footer {
-    max-width: 100vw;
-    background-color: $color-negro;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .section {
+    margin-top: 5em;
 
     @media (max-width: $minimobile-breakpoint) {
       display: flex;
       justify-content: center;
-      flex-direction: row;
+      flex-direction: column;
       margin: 0 auto;
     }
 
     @media (max-width: $mobile-breakpoint) {
       display: flex;
       justify-content: center;
-      flex-direction: row;
+      flex-direction: column;
       margin: 0 auto;
     }
 
-    &-a {
-      margin: 1em;
-      font-size: 2em;
+    .title {
+      font-family: $main-font;
+      font-size: 4.3rem;
+      color: $color-casiBlanco;
+      padding-left: 30px;
+      padding-bottom: 1em;
 
-      &:hover {
-        color: $color-verde;
+      @media (max-width: $minimobile-breakpoint) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 2.5rem;
       }
 
-      a {
+      @media (max-width: $mobile-breakpoint) {
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    &-content {
+      max-width: 100vw;
+      margin: 10px;
+      box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-wrap: wrap;
+
+      &-images {
+        width: 600px;
+        height: 300px;
+        border: 1px solid $color-casiBlanco;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
         color: $color-casiBlanco;
 
-        .fab {
-          transition: transform 2s all;
-          color: $color-casiBlanco;
+
+        &:hover {
+          transform: scale(1.03);
+          border: none;
+          background: linear-gradient(-45deg, #92e3a9, #37e263, #148230);
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+
+            50% {
+              background-position: 100% 50%;
+            }
+
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+        }
+
+        .text-section {
+          font-size: 2rem;
 
           &:hover {
-            color: $color-verde;
-            transform: scale(1.10);
+            font-size: 4rem;
+            text-transform: uppercase;
           }
+
+
+          a {
+            text-decoration: none;
+            color: #fff;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  max-width: 700px;
+  height: 400px;
+  margin-top: 90px;
+  margin-left: 30px;
+
+  @media (max-width: $minimobile-breakpoint) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .Escribime {
+    font-size: 4rem;
+    color: $color-casiBlanco;
+    margin-bottom: 50px;
+
+    @media (max-width: $minimobile-breakpoint) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      font-size: 2.5rem;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+      font-size: 2.5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .btn-contact {
+    color: $color-casiBlanco;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0);
+    border: 2px solid;
+    border-color: $color-casiBlanco;
+    transition: all 1s ease;
+    position: relative;
+    padding: 1rem 4.2rem;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      background: $color-verde;
+      color: $color-negro;
+      text-decoration: none;
+      border: none;
+    }
+  }
+}
+
+.footer {
+  max-width: 100vw;
+  background-color: $color-negro;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: $minimobile-breakpoint) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  &-a {
+    margin: 1em;
+    font-size: 2em;
+
+    &:hover {
+      color: $color-verde;
+    }
+
+    a {
+      color: $color-casiBlanco;
+
+      .fab {
+        transition: transform 2s all;
+        color: $color-casiBlanco;
+
+        &:hover {
+          color: $color-verde;
+          transform: scale(1.10);
         }
       }
     }
