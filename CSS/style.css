@@ -495,13 +495,13 @@ html body .main-text-principal-subtitle {
   }
 }
 
-html body .main-text-btn {
+html body .main-text-principal-btn {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
   padding: 0.5em 1.2em;
   background: rgba(0, 0, 0, 0);
-  border: 2px solid;
+  border: 2px solid #fff;
   border-color: #fff;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
@@ -511,14 +511,14 @@ html body .main-text-btn {
   text-decoration: none;
 }
 
-html body .main-text-btn:hover {
+html body .main-text-principal-btn:hover {
   background: #92e3a9;
   color: #212121;
   text-decoration: none;
   border: #92e3a9;
 }
 
-html .about {
+html body .about {
   color: #fff;
   min-width: 100vw;
   min-height: 100vh;
@@ -526,7 +526,7 @@ html .about {
 }
 
 @media (max-width: 320px) {
-  html .about {
+  html body .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -542,7 +542,7 @@ html .about {
 }
 
 @media (max-width: 568px) {
-  html .about {
+  html body .about {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -557,13 +557,13 @@ html .about {
   }
 }
 
-html .about .quien {
+html body .about .quien {
   font-size: 4.3rem;
   margin: 50px 0 50px 30px;
 }
 
 @media (max-width: 320px) {
-  html .about .quien {
+  html body .about .quien {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -579,7 +579,7 @@ html .about .quien {
 }
 
 @media (max-width: 568px) {
-  html .about .quien {
+  html body .about .quien {
     font-size: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -595,20 +595,20 @@ html .about .quien {
   }
 }
 
-html .about-text {
+html body .about-text {
   font-family: "Roboto", sans-serif;
   width: 800px;
   height: auto;
   margin-left: 30px;
 }
 
-html .about-text .myName {
+html body .about-text .myName {
   font-size: 1.5rem;
   color: #fff;
   margin-bottom: 30px;
 }
 
-html .about-text .btn-my {
+html body .about-text .btn-my {
   color: #fff;
   font-size: 20px;
   padding: 0.5em 1.2em;
@@ -624,7 +624,7 @@ html .about-text .btn-my {
   margin: 60px 0 20px 0;
 }
 
-html .about-text .btn-my:hover {
+html body .about-text .btn-my:hover {
   background: #92e3a9;
   color: #212121;
   text-decoration: none;
@@ -632,23 +632,23 @@ html .about-text .btn-my:hover {
 }
 
 @media (max-width: 320px) {
-  html .about-text .btn-my {
+  html body .about-text .btn-my {
     display: none;
   }
 }
 
 @media (max-width: 568px) {
-  html .about-text .btn-my {
+  html body .about-text .btn-my {
     display: none;
   }
 }
 
-html .section {
+html body .section {
   margin-top: 5em;
 }
 
 @media (max-width: 320px) {
-  html .section {
+  html body .section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -664,7 +664,7 @@ html .section {
 }
 
 @media (max-width: 568px) {
-  html .section {
+  html body .section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -679,7 +679,7 @@ html .section {
   }
 }
 
-html .section .title {
+html body .section .title {
   font-family: "Roboto", sans-serif;
   font-size: 4.3rem;
   color: #fff;
@@ -688,7 +688,7 @@ html .section .title {
 }
 
 @media (max-width: 320px) {
-  html .section .title {
+  html body .section .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -704,7 +704,7 @@ html .section .title {
 }
 
 @media (max-width: 568px) {
-  html .section .title {
+  html body .section .title {
     font-size: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -720,7 +720,7 @@ html .section .title {
   }
 }
 
-html .section-content {
+html body .section-content {
   max-width: 100vw;
   margin: 10px;
   -webkit-box-shadow: 0px 30px 20px -20px rgba(0, 0, 0, 0.4);
@@ -732,7 +732,7 @@ html .section-content {
       flex-wrap: wrap;
 }
 
-html .section-content-images {
+html body .section-content-images {
   width: 600px;
   height: 300px;
   border: 1px solid #fff;
@@ -754,7 +754,7 @@ html .section-content-images {
   color: #fff;
 }
 
-html .section-content-images:hover {
+html body .section-content-images:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
   border: none;
@@ -788,25 +788,25 @@ html .section-content-images:hover {
   }
 }
 
-html .section-content-images .text-section {
+html body .section-content-images .text-section {
   font-size: 2rem;
 }
 
-html .section-content-images .text-section:hover {
+html body .section-content-images .text-section:hover {
   font-size: 4rem;
   text-transform: uppercase;
 }
 
-html .section-content-images .text-section a {
+html body .section-content-images .text-section a {
   text-decoration: none;
   color: #fff;
 }
 
-html .section-content-images .text-section a:hover {
+html body .section-content-images .text-section a:hover {
   color: #fff;
 }
 
-.contact {
+html .contact {
   max-width: 700px;
   height: 400px;
   margin-top: 90px;
@@ -814,7 +814,7 @@ html .section-content-images .text-section a:hover {
 }
 
 @media (max-width: 320px) {
-  .contact {
+  html .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -830,7 +830,7 @@ html .section-content-images .text-section a:hover {
 }
 
 @media (max-width: 568px) {
-  .contact {
+  html .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -845,14 +845,14 @@ html .section-content-images .text-section a:hover {
   }
 }
 
-.contact .Escribime {
+html .contact .Escribime {
   font-size: 4rem;
   color: #fff;
   margin-bottom: 50px;
 }
 
 @media (max-width: 320px) {
-  .contact .Escribime {
+  html .contact .Escribime {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -868,7 +868,7 @@ html .section-content-images .text-section a:hover {
 }
 
 @media (max-width: 568px) {
-  .contact .Escribime {
+  html .contact .Escribime {
     font-size: 2.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -884,7 +884,7 @@ html .section-content-images .text-section a:hover {
   }
 }
 
-.contact .btn-contact {
+html .contact .btn-contact {
   color: #fff;
   font-size: 20px;
   background: rgba(0, 0, 0, 0);
@@ -898,14 +898,14 @@ html .section-content-images .text-section a:hover {
   text-decoration: none;
 }
 
-.contact .btn-contact:hover {
+html .contact .btn-contact:hover {
   background: #92e3a9;
   color: #212121;
   text-decoration: none;
   border: none;
 }
 
-.footer {
+html .footer {
   max-width: 100vw;
   background-color: #212121;
   display: -webkit-box;
@@ -919,7 +919,7 @@ html .section-content-images .text-section a:hover {
 }
 
 @media (max-width: 320px) {
-  .footer {
+  html .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -935,7 +935,7 @@ html .section-content-images .text-section a:hover {
 }
 
 @media (max-width: 568px) {
-  .footer {
+  html .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -950,20 +950,20 @@ html .section-content-images .text-section a:hover {
   }
 }
 
-.footer-a {
+html .footer-a {
   margin: 1em;
   font-size: 2em;
 }
 
-.footer-a:hover {
+html .footer-a:hover {
   color: #92e3a9;
 }
 
-.footer-a a {
+html .footer-a a {
   color: #fff;
 }
 
-.footer-a a .fab {
+html .footer-a a .fab {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -971,7 +971,7 @@ html .section-content-images .text-section a:hover {
   color: #fff;
 }
 
-.footer-a a .fab:hover {
+html .footer-a a .fab:hover {
   color: #92e3a9;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
