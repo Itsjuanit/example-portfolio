@@ -489,10 +489,9 @@ html {
           margin: 0 auto 20px;
           display: flex;
           justify-content: center;
-          flex-direction: gitcolumn;
+          flex-direction: column;
           align-items: center;
-          border-radius: 10px;
-
+          
           &:hover {
             transform: scale(1.03);
           }
