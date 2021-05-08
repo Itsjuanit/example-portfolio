@@ -5,7 +5,6 @@
           box-sizing: border-box;
 }
 
-/*BREAK POINTS*/
 /* Color Theme Swatches in Hex */
 /*FONT*/
 html {
@@ -32,55 +31,16 @@ html body::-webkit-scrollbar-thumb:active {
   background-color: #555;
 }
 
-html body #myBtn {
-  width: 50px;
-  height: 50px;
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #2a2c37;
-  color: #fff;
-  cursor: pointer;
-  padding: 4px;
-  border-radius: 100px;
-}
-
-html body #myBtn:hover {
-  background-color: #92e3a9;
-  color: #2a2c37;
-}
-
 html body .header {
-  width: 100vw;
+  width: 100%;
   min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 2em;
-  padding-right: 2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media (max-width: 568px) {
-  html body .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
 }
 
 html body .header-nav {
@@ -88,24 +48,50 @@ html body .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
 
-@media (max-width: 568px) {
+@media screen and (max-width: 800px) {
   html body .header-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html body .header-nav {
+    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -119,22 +105,6 @@ html body .header-nav .internos {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #fff;
-}
-
-@media (max-width: 568px) {
-  html body .header-nav .internos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 auto;
-  }
 }
 
 html body .header-nav .internos::after {
@@ -161,8 +131,47 @@ html body .header-nav .internos:hover::after {
 }
 
 html body .main-text {
-  max-width: 100vw;
+  max-width: 100%;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+  html body .main-text {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html body .main-text {
+    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 html body .main-text-principal {
@@ -173,9 +182,63 @@ html body .main-text-principal {
   /* ANIMACIONES SVG*/
 }
 
+@media screen and (max-width: 600px) {
+  html body .main-text-principal {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html body .main-text-principal {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
 html body .main-text-principal .img {
   margin-top: -100px;
   float: right;
+}
+
+@media screen and (max-width: 600px) {
+  html body .main-text-principal .img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html body .main-text-principal .img {
+    display: none;
+  }
 }
 
 html body .main-text-principal #Exigual {
@@ -309,7 +372,18 @@ html body .about {
   min-width: 100vw;
   min-height: 100vh;
   height: 100vh;
-  /*border:1px solid white; */
+}
+
+@media screen and (max-width: 600px) {
+  html body .about {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html body .about {
+    text-align: center;
+  }
 }
 
 html body .about .quien {
@@ -317,11 +391,37 @@ html body .about .quien {
   margin: 50px 0 50px 30px;
 }
 
+@media screen and (max-width: 600px) {
+  html body .about .quien {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html body .about .quien {
+    font-size: 2.5rem;
+  }
+}
+
 html body .about-text {
   font-family: "Roboto", sans-serif;
   width: 800px;
   height: auto;
   margin-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  html body .about-text {
+    max-width: 90%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html body .about-text {
+    max-width: 90%;
+    text-align: center;
+  }
 }
 
 html body .about-text .myName {
