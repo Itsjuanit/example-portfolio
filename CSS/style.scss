@@ -13,13 +13,10 @@ $color-grisOscuro: #404040;
 $color-back: #2a2c37;
 
 /*FONT*/
-$main-font: "Roboto",
-sans-serif;
-
+$main-font: "Roboto", sans-serif;
 
 html {
   scroll-behavior: smooth;
-
 
   body {
     font-family: $main-font;
@@ -50,7 +47,6 @@ html {
       padding-top: 2em;
 
       justify-content: center;
-
 
       &-nav {
         width: 100%;
@@ -105,7 +101,6 @@ html {
             height: 1px;
             background: $color-acent;
           }
-
         }
       }
     }
@@ -113,7 +108,6 @@ html {
     .main-text {
       max-width: 100%;
       min-height: 100vh;
-
 
       @media screen and (max-width: 800px) {
         width: 100%;
@@ -232,8 +226,6 @@ html {
           font-size: 2rem;
           margin-top: 20px;
           margin-bottom: 40px;
-
-
         }
 
         &-btn {
@@ -259,7 +251,6 @@ html {
         }
       }
     }
-
 
     .about {
       padding-top: 50px;
@@ -450,7 +441,7 @@ html {
 
           &:hover {
             color: $color-acent;
-            transform: scale(1.10);
+            transform: scale(1.1);
           }
         }
       }
