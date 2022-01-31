@@ -5,15 +5,15 @@
 }
 
 /* Color Theme Swatches in Hex */
-$color-primaryText: #fff;
-$color-acent: #92e3a9;
+$color-primaryText: #212121;
+$color-acent: #8baea4;
 $color-gris: #bfbfbf;
 $color-grisTopo: #737373;
-$color-grisOscuro: #404040;
-$color-back: #2a2c37;
+$color-backNew: #404040;
+$color-back: #fff;
 
 /*FONT*/
-$main-font: "Roboto", sans-serif;
+$main-font: "Source Sans Pro", sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -32,12 +32,12 @@ html {
 
     //Estilos barra (thumb) de scroll
     &::-webkit-scrollbar-thumb {
-      background: #555;
+      background: $color-acent;
       border-radius: 4px;
     }
 
     &::-webkit-scrollbar-thumb:active {
-      background-color: #555;
+      background-color: $color-acent;
     }
 
     .header {
@@ -45,8 +45,17 @@ html {
       min-height: 40px;
       display: flex;
       padding-top: 2em;
-
       justify-content: center;
+
+      .circle {
+        position: absolute;
+        width: 211px;
+        height: 211px;
+        background: #87e987;
+        filter: blur(100px);
+        top: 15%;
+        left: 90%;
+      }
 
       &-nav {
         width: 100%;
@@ -109,6 +118,14 @@ html {
       max-width: 100%;
       min-height: 100vh;
 
+      .circle2 {
+        position: absolute;
+        width: 211px;
+        height: 211px;
+        background: #8baea4;
+        filter: blur(163px);
+      }
+
       @media screen and (max-width: 800px) {
         width: 100%;
         display: flex;
@@ -153,7 +170,7 @@ html {
         }
 
         .img {
-          margin-top: -100px;
+          margin-top: -150px;
           float: right;
 
           @media screen and (max-width: 600px) {
@@ -164,55 +181,6 @@ html {
             display: none;
           }
         }
-
-        /* ANIMACIONES SVG*/
-
-        #Exigual {
-          animation: hithere 1s ease infinite;
-          transform-origin: center;
-          transform-box: fill-box;
-
-          @keyframes hithere {
-            30% {
-              transform: scale(1.2);
-            }
-
-            60% {
-              transform: rotate(-20deg) scale(1.2);
-            }
-          }
-        }
-
-        #If {
-          animation: bounce 2s ease infinite;
-
-          @keyframes bounce {
-            70% {
-              transform: translateY(0%);
-            }
-
-            80% {
-              transform: translateY(-15%);
-            }
-          }
-        }
-
-        #Igual {
-          animation: pulse 1s infinite ease-in-out alternate;
-          transform-origin: center;
-          transform-box: fill-box;
-
-          @keyframes pulse {
-            from {
-              transform: scale(0.8);
-            }
-
-            to {
-              transform: scale(1.2);
-            }
-          }
-        }
-
         &-h1 {
           color: $color-primaryText;
           font-family: $main-font;
@@ -229,24 +197,104 @@ html {
         }
 
         &-btn {
-          color: $color-primaryText;
-          font-size: 20px;
-          font-weight: 500;
-          padding: 0.5em 1.2em;
-          background: rgba(0, 0, 0, 0);
-          border: 2px solid $color-primaryText;
-          border-color: $color-primaryText;
-          transition: all 1s ease;
+          cursor: pointer;
           position: relative;
-          padding: 1rem 4.2rem;
-          font-weight: 400;
+          display: inline-block;
+          padding: 30px 61px;
+          border-radius: 4px;
+          color: $color-acent;
           text-decoration: none;
+          text-transform: uppercase;
+          overflow: hidden;
+          margin: 25px;
+          filter: hue-rotate(0deg);
+          border: 2px solid #d2bdff;
+          transition: all 0.1s linear;
 
           &:hover {
-            background: $color-acent;
-            color: $color-back;
-            text-decoration: none;
-            border: $color-acent;
+            border: 1px solid transparent;
+          }
+          span {
+            position: absolute;
+            display: block;
+
+            &:nth-child(1) {
+              filter: hue-rotate(0deg);
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 3px;
+              background: linear-gradient(90deg, transparent, #3a86ff);
+              animation: animate1 1s linear infinite;
+            }
+            @keyframes animate1 {
+              0% {
+                left: -100%;
+              }
+              50%,
+              100% {
+                left: 100%;
+              }
+            }
+            &:nth-child(2) {
+              filter: hue-rotate(60deg);
+              top: -100%;
+              right: 0;
+              width: 3px;
+              height: 100%;
+              background: linear-gradient(180deg, transparent, #3a86ff);
+              animation: animate2 1s linear infinite;
+              animation-delay: 0.25s;
+            }
+            @keyframes animate2 {
+              0% {
+                top: -100%;
+              }
+              50%,
+              100% {
+                top: 100%;
+              }
+            }
+            &:nth-child(3) {
+              filter: hue-rotate(120deg);
+              bottom: 0;
+              right: 0;
+              width: 100%;
+
+              background: linear-gradient(270deg, transparent, #3a86ff);
+              animation: animate3 1s linear infinite;
+              animation-delay: 0.5s;
+            }
+            @keyframes animate3 {
+              0% {
+                right: -100%;
+                height: 3px;
+              }
+              50%,
+              100% {
+                height: 2px;
+                right: 100%;
+              }
+            }
+            &:nth-child(4) {
+              filter: hue-rotate(300deg);
+              bottom: -100%;
+              left: 0;
+              width: 3px;
+              height: 100%;
+              background: linear-gradient(360deg, transparent, #3a86ff);
+              animation: animate4 1s linear infinite;
+              animation-delay: 0.75s;
+            }
+            @keyframes animate4 {
+              0% {
+                bottom: -100%;
+              }
+              50%,
+              100% {
+                bottom: 100%;
+              }
+            }
           }
         }
       }
