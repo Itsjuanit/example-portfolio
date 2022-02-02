@@ -43,17 +43,6 @@ html body .header {
           justify-content: center;
 }
 
-html body .header .circle {
-  position: absolute;
-  width: 211px;
-  height: 211px;
-  background: #87e987;
-  -webkit-filter: blur(100px);
-          filter: blur(100px);
-  top: 15%;
-  left: 90%;
-}
-
 html body .header-nav {
   width: 100%;
   display: -webkit-box;
@@ -144,15 +133,6 @@ html body .header-nav .internos:hover::after {
 html body .main-text {
   max-width: 100%;
   min-height: 100vh;
-}
-
-html body .main-text .circle2 {
-  position: absolute;
-  width: 211px;
-  height: 211px;
-  background: #8baea4;
-  -webkit-filter: blur(163px);
-          filter: blur(163px);
 }
 
 @media screen and (max-width: 800px) {
@@ -309,8 +289,8 @@ html body .main-text-principal-btn span:nth-child(1) {
   left: 0;
   width: 100%;
   height: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#3a86ff));
-  background: linear-gradient(90deg, transparent, #3a86ff);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#3aff5b));
+  background: linear-gradient(90deg, transparent, #3aff5b);
   -webkit-animation: animate1 1s linear infinite;
           animation: animate1 1s linear infinite;
 }
@@ -342,8 +322,8 @@ html body .main-text-principal-btn span:nth-child(2) {
   right: 0;
   width: 3px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#3a86ff));
-  background: linear-gradient(180deg, transparent, #3a86ff);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#057e3b));
+  background: linear-gradient(180deg, transparent, #057e3b);
   -webkit-animation: animate2 1s linear infinite;
           animation: animate2 1s linear infinite;
   -webkit-animation-delay: 0.25s;
@@ -376,8 +356,8 @@ html body .main-text-principal-btn span:nth-child(3) {
   bottom: 0;
   right: 0;
   width: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#3a86ff));
-  background: linear-gradient(270deg, transparent, #3a86ff);
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#3ae974));
+  background: linear-gradient(270deg, transparent, #3ae974);
   -webkit-animation: animate3 1s linear infinite;
           animation: animate3 1s linear infinite;
   -webkit-animation-delay: 0.5s;
@@ -415,8 +395,8 @@ html body .main-text-principal-btn span:nth-child(4) {
   left: 0;
   width: 3px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#3a86ff));
-  background: linear-gradient(360deg, transparent, #3a86ff);
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#3aff44));
+  background: linear-gradient(360deg, transparent, #3aff44);
   -webkit-animation: animate4 1s linear infinite;
           animation: animate4 1s linear infinite;
   -webkit-animation-delay: 0.75s;
@@ -449,6 +429,22 @@ html body .about {
   min-width: 100vw;
   min-height: 100vh;
   height: 100vh;
+}
+
+html body .about .otherMe {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  html body .about .otherMe {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html body .about .otherMe {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -530,11 +526,11 @@ html body .about-text .btn-my:hover {
   border: #8baea4;
 }
 
-html body .section {
-  margin-top: 5em;
+html body .artGit {
+  min-height: 100vh;
 }
 
-html body .section .title {
+html body .artGit .proyecto {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 4.3rem;
   color: #212121;
@@ -542,7 +538,8 @@ html body .section .title {
   padding-bottom: 1em;
 }
 
-html body .section-content {
+html body .artGit .mainGit {
+  font-family: "Source Sans Pro", sans-serif;
   max-width: 100vw;
   margin: 10px;
   display: -webkit-box;
@@ -552,7 +549,10 @@ html body .section-content {
       flex-wrap: wrap;
 }
 
-html body .section-content-images {
+html body .artGit .mainGit .articleGit {
+  height: 200px;
+  border: 2px solid #d0c1f2;
+  border-radius: 4px;
   width: 600px;
   margin: 0 auto 20px;
   display: -webkit-box;
@@ -568,61 +568,61 @@ html body .section-content-images {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-html body .section-content-images:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
-html body .section-content-images img {
-  width: 100%;
-  -webkit-transition: -webkit-transform 1s all;
-  transition: -webkit-transform 1s all;
-  transition: transform 1s all;
-  transition: transform 1s all, -webkit-transform 1s all;
   cursor: pointer;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 
-html body .section-content-images-indiv {
-  width: 100%;
+html body .artGit .mainGit .articleGit .h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+html body .artGit .mainGit .articleGit .textGit {
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+html body .artGit .mainGit .articleGit .btn1 {
+  width: 100px;
   height: 40px;
-  background-color: #111;
-  opacity: 0.9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  color: #212121;
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid;
+  border-color: #d0c1f2;
+  border-radius: 4px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-html body .section-content-images-indiv .other {
-  font-size: 2em;
-  color: #fafafa;
+html body .artGit .mainGit .articleGit .btn1:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
-html .contact {
-  max-width: 700px;
+html body .artGit .mainGit .articleGit .btn1 a {
+  text-decoration: none;
+}
+
+html body .contact {
+  max-width: 100vw;
   height: 400px;
   margin-top: 90px;
   margin-left: 30px;
 }
 
-html .contact .Escribime {
+html body .contact .Escribime {
   font-size: 4rem;
   color: #212121;
   margin-bottom: 50px;
 }
 
-html .contact .btn-contact {
+html body .contact .btn-contact {
   color: #212121;
   font-size: 20px;
   background: rgba(0, 0, 0, 0);
@@ -636,14 +636,14 @@ html .contact .btn-contact {
   text-decoration: none;
 }
 
-html .contact .btn-contact:hover {
+html body .contact .btn-contact:hover {
   background: #8baea4;
   color: #fff;
   text-decoration: none;
   border: none;
 }
 
-html .footer {
+html body .footer {
   max-width: 100vw;
   background-color: #fff;
   display: -webkit-box;
@@ -656,20 +656,20 @@ html .footer {
           justify-content: center;
 }
 
-html .footer-a {
+html body .footer-a {
   margin: 1em;
   font-size: 2em;
 }
 
-html .footer-a:hover {
+html body .footer-a:hover {
   color: #8baea4;
 }
 
-html .footer-a a {
+html body .footer-a a {
   color: #212121;
 }
 
-html .footer-a a .fab {
+html body .footer-a a .fab {
   -webkit-transition: -webkit-transform 2s all;
   transition: -webkit-transform 2s all;
   transition: transform 2s all;
@@ -677,7 +677,7 @@ html .footer-a a .fab {
   color: #212121;
 }
 
-html .footer-a a .fab:hover {
+html body .footer-a a .fab:hover {
   color: #8baea4;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
