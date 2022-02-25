@@ -58,7 +58,7 @@
         conocimientos en metodologías Agile como Scrum y Kanban.
       </p>
       <a class="main-text-principal-btn"
-        href="https://drive.google.com/file/d/1RsrVFzmL95eCaMAk0SxnZNfuUaTfF-_2/view?usp=sharing" target="_blank"
+        href="https://drive.google.com/file/d/1OHmzu4CluPW_K7DOq5ChqqE_ebuOeYBS/view?usp=sharing" target="_blank"
         rel="noopener">
         <span></span>
         <span></span>
@@ -118,8 +118,7 @@
     url: "https://api.github.com/users/itsjuanit/repos",
     method: "GET",
   }).then((results) => {
-    console.log(results);
-
+    console.log(results)
     for (let i = 0; i < results.length; i++) {
       if (results[i].stargazers_count != 0) {
         let article =
