@@ -13,7 +13,8 @@ $color-backNew: #404040;
 $color-back: #fff;
 
 /*FONT*/
-$main-font: "Source Sans Pro", sans-serif;
+$main-font: "Source Sans Pro",
+sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -163,6 +164,7 @@ html {
             display: none;
           }
         }
+
         &-h1 {
           color: $color-primaryText;
           font-family: $main-font;
@@ -196,6 +198,7 @@ html {
           &:hover {
             border: 1px solid transparent;
           }
+
           span {
             position: absolute;
             display: block;
@@ -209,15 +212,18 @@ html {
               background: linear-gradient(90deg, transparent, #3aff5b);
               animation: animate1 1s linear infinite;
             }
+
             @keyframes animate1 {
               0% {
                 left: -100%;
               }
+
               50%,
               100% {
                 left: 100%;
               }
             }
+
             &:nth-child(2) {
               filter: hue-rotate(60deg);
               top: -100%;
@@ -228,15 +234,18 @@ html {
               animation: animate2 1s linear infinite;
               animation-delay: 0.25s;
             }
+
             @keyframes animate2 {
               0% {
                 top: -100%;
               }
+
               50%,
               100% {
                 top: 100%;
               }
             }
+
             &:nth-child(3) {
               filter: hue-rotate(120deg);
               bottom: 0;
@@ -246,17 +255,20 @@ html {
               animation: animate3 1s linear infinite;
               animation-delay: 0.5s;
             }
+
             @keyframes animate3 {
               0% {
                 right: -100%;
                 height: 3px;
               }
+
               50%,
               100% {
                 height: 2px;
                 right: 100%;
               }
             }
+
             &:nth-child(4) {
               filter: hue-rotate(300deg);
               bottom: -100%;
@@ -267,10 +279,12 @@ html {
               animation: animate4 1s linear infinite;
               animation-delay: 0.75s;
             }
+
             @keyframes animate4 {
               0% {
                 bottom: -100%;
               }
+
               50%,
               100% {
                 bottom: 100%;
@@ -290,6 +304,7 @@ html {
 
       .otherMe {
         float: right;
+
         @media screen and (max-width: 600px) {
           display: none;
         }
@@ -365,130 +380,124 @@ html {
         }
       }
     }
-    .artGit {
+
+    .section {
       min-height: 100vh;
-      .proyecto {
+
+      .title {
         font-family: $main-font;
         font-size: 4.3rem;
         color: $color-primaryText;
         padding-left: 30px;
         padding-bottom: 1em;
       }
-      .mainGit {
+
+      &-content {
         font-family: $main-font;
         max-width: 100vw;
         margin: 10px;
         display: flex;
         flex-wrap: wrap;
 
-        .articleGit {
-          height: 200px;
-          border: 2px solid #d0c1f2;
-          border-radius: 4px;
+        &-images {
           width: 600px;
           margin: 0 auto 20px;
           display: flex;
           justify-content: center;
           flex-direction: column;
           align-items: center;
-          cursor: pointer;
 
-          .h2 {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 2.2rem;
-            margin-top: 10px;
-            margin-bottom: 20px;
+          &:hover {
+            transform: scale(1.03);
           }
-          .textGit {
-            max-width: 400px;
-            margin-bottom: 20px;
+
+          img {
+            width: 100%;
+            transition: transform 1s all;
+            cursor: pointer;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
           }
-          .btn1 {
-            width: 100px;
+
+          &-indiv {
+            width: 100%;
             height: 40px;
-            color: #212121;
-            font-size: 12px;
-            background: rgba(0, 0, 0, 0);
-            border: 1px solid;
-            border-color: #d0c1f2;
-            border-radius: 4px;
-            transition: all 1s ease;
-            position: relative;
-            font-weight: bold;
-            margin-bottom: 10px;
+            background-color: #111;
+            opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
 
-            &:hover {
-              transform: scale(1.2);
-            }
-
-            a {
-              text-decoration: none;
+            .other {
+              font-size: 2em;
+              color: #fafafa;
             }
           }
         }
       }
     }
+  }
 
-    .contact {
-      max-width: 100vw;
-      height: 400px;
-      margin-top: 90px;
-      margin-left: 30px;
+  .contact {
+    max-width: 100vw;
+    height: 400px;
+    margin-top: 90px;
+    margin-left: 30px;
 
-      .Escribime {
-        font-size: 4rem;
-        color: $color-primaryText;
-        margin-bottom: 50px;
-      }
-
-      .btn-contact {
-        color: $color-primaryText;
-        font-size: 20px;
-        background: rgba(0, 0, 0, 0);
-        border: 2px solid;
-        border-color: $color-primaryText;
-        transition: all 1s ease;
-        position: relative;
-        padding: 1rem 4.2rem;
-        font-weight: 400;
-        text-decoration: none;
-
-        &:hover {
-          background: $color-acent;
-          color: $color-back;
-          text-decoration: none;
-          border: none;
-        }
-      }
+    .Escribime {
+      font-size: 4rem;
+      color: $color-primaryText;
+      margin-bottom: 50px;
     }
 
-    .footer {
-      max-width: 100vw;
-      background-color: $color-back;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+    .btn-contact {
+      color: $color-primaryText;
+      font-size: 20px;
+      background: rgba(0, 0, 0, 0);
+      border: 2px solid;
+      border-color: $color-primaryText;
+      transition: all 1s ease;
+      position: relative;
+      padding: 1rem 4.2rem;
+      font-weight: 400;
+      text-decoration: none;
 
-      &-a {
-        margin: 1em;
-        font-size: 2em;
+      &:hover {
+        background: $color-acent;
+        color: $color-back;
+        text-decoration: none;
+        border: none;
+      }
+    }
+  }
 
-        &:hover {
-          color: $color-acent;
-        }
+  .footer {
+    max-width: 100vw;
+    background-color: $color-back;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-        a {
+    &-a {
+      margin: 1em;
+      font-size: 2em;
+
+      &:hover {
+        color: $color-acent;
+      }
+
+      a {
+        color: $color-primaryText;
+
+        .fab {
+          transition: transform 2s all;
           color: $color-primaryText;
 
-          .fab {
-            transition: transform 2s all;
-            color: $color-primaryText;
-
-            &:hover {
-              color: $color-acent;
-              transform: scale(1.1);
-            }
+          &:hover {
+            color: $color-acent;
+            transform: scale(1.1);
           }
         }
       }
