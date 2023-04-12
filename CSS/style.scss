@@ -13,8 +13,7 @@ $color-backNew: #404040;
 $color-back: #fff;
 
 /*FONT*/
-$main-font: "Source Sans Pro",
-sans-serif;
+$main-font: "Source Sans Pro", sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -398,14 +397,19 @@ html {
         margin: 10px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center; // Agregado para centrar las tarjetas
 
         &-images {
-          width: 600px;
-          margin: 0 auto 20px;
+          border: 1px solid #b7f0ca;
+          width: 600px; // Reducido el tamaño de la tarjeta
+          margin: 20px; // Aumentado el margen entre tarjetas
+          padding: 10px;
           display: flex;
-          justify-content: center;
           flex-direction: column;
           align-items: center;
+          border-radius: 4px; // Agregado para suavizar las esquinas de la tarjeta
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Agregado para dar una sombra a la tarjeta
+          transition: transform 0.3s ease-in-out; // Ajustado para una transición más rápida
 
           &:hover {
             transform: scale(1.03);
@@ -413,27 +417,36 @@ html {
 
           img {
             width: 100%;
-            transition: transform 1s all;
+            height: auto; // Agregado para mantener la proporción de la imagen
             cursor: pointer;
             border-top-right-radius: 4px;
             border-top-left-radius: 4px;
           }
+          &-opinion {
+            color: #212121;
+            margin: 10px;
+          }
+          &-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            background-color: #b7f0ca; // Cambia este valor según el color de fondo que prefieras
+            color: #212121;
+            font-size: 0.8rem;
+            border-radius: 12px;
+            margin-right: 4px; // Espacio entre tags
+            margin-bottom: 4px; // Espacio entre tags y el contenido de abajo
+            text-decoration: none; // Elimina el subrayado si el tag es un enlace
+            transition: background-color 0.3s ease;
 
-          &-indiv {
-            width: 100%;
-            height: 40px;
-            background-color: #111;
-            opacity: 0.9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-bottom-left-radius: 4px;
-            border-bottom-right-radius: 4px;
-
-            .other {
-              font-size: 2em;
-              color: #fafafa;
+            &:hover {
+              background-color: #b8ddc4; // Cambia este valor según el color de fondo que prefieras cuando se pasa el cursor por encima
+              cursor: pointer;
             }
+          }
+          &-title {
+            font-size: 1.5rem;
+            color: $color-primaryText;
+            margin: 10px;
           }
         }
       }
