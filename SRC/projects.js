@@ -10,7 +10,7 @@ const projectsData = [
   },
   {
     id: 1,
-    title: "Work App",
+    title: "YaOficios",
     opinion:
       "Es una webapp que te permite ver  y agregar personas con diferentes oficios, en esta vas a poder encontrar y filtrar por el oficio que necesitas, está pensada (por ahora) para la provincia de San Juan.",
     tag: "REACT,TAILWINDCSS,MONGODB",
