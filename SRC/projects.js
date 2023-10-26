@@ -4,7 +4,7 @@ const projectsData = [
     title: "Crypto App",
     opinion:
       "Es una webapp que te permite ver el valor de las criptomonedas en tiempo real. Esta hecha con React y Styled-Components. La API que use es la de CryptoCompare.",
-    tag: "REACT,STYLED-COMPONENTS,API",
+    tag: "REACT,STYLED-COMPONENTS,API,JAVASCRIPT",
     url: "https://cripto-app-tawny.vercel.app/",
     img: "https://drive.google.com/uc?export=download&id=1YXpeKWkWQnsqO6oSg9nK-FAZics_G6Qn",
   },
@@ -13,7 +13,7 @@ const projectsData = [
     title: "YaOficios",
     opinion:
       "Es una webapp que te permite ver  y agregar personas con diferentes oficios, en esta vas a poder encontrar y filtrar por el oficio que necesitas, está pensada (por ahora) para la provincia de San Juan.",
-    tag: "REACT,TAILWINDCSS,MONGODB",
+    tag: "REACT,TAILWINDCSS,MONGODB,JAVASCRIPT,CSS",
     url: "https://my-recommend-app.vercel.app/",
     img: "https://drive.google.com/uc?export=download&id=1jlbvOYR0-HY8NeaKTD-FLc4tG41QvZGb",
   },
@@ -22,7 +22,7 @@ const projectsData = [
     title: "Vet App",
     opinion:
       "Es una webapp que te permite agregar Mascotas, junto al nombre del dueño, su correo y los sintomas, tambien te deja darle de alta e ir viendo gracias a localStorage cuantos pacientes has tenido.",
-    tag: "REACT, TAILWINDCSS",
+    tag: "REACT,TAILWINDCSS,JAVASCRIPT,LOCALSTORAGE",
     url: "https://my-calendar-app-ebon.vercel.app/",
     img: "https://drive.google.com/uc?export=download&id=1pWPIkm-zAK_TdQcpYsxLlq7y0G8oAcst",
   },
@@ -53,13 +53,16 @@ const projectsData = [
   },
 ];
 
+// 2. Función que muestra los proyectos
 function displayProjects() {
   const projectsContainer = document.querySelector(".section-content");
 
   projectsData.forEach((project) => {
     const tags = project.tag
       .split(",")
-      .map((tag) => `<span class="section-content-images-tag">${tag}</span>`)
+      .map(
+        (tag) => `<span class="section-content-images-tag ${tag}">${tag}</span>`
+      )
       .join(" ");
 
     const projectElement = `
@@ -79,4 +82,5 @@ function displayProjects() {
   });
 }
 
+// 3. Llamada a la función
 document.addEventListener("DOMContentLoaded", displayProjects);
