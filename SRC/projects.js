@@ -10,6 +10,15 @@ const projectsData = [
   },
   {
     id: 1,
+    title: "SismosApp",
+    opinion:
+      "Es una webapp que con un backend y un front end, se pueden ver los sismos ocurridos, el banckend esta hosteado en Render, esta con Node.js, y el frontend con React, Tailwindcss.",
+    tag: "REACT,TAILWINDCSS,API,JAVASCRIPT,NODE.JS,VERCEL,RENDER",
+    url: "https://sismo-app-chi.vercel.app/",
+    img: "https://drive.google.com/uc?export=view&id=19CI52PqWpLIj-aEXoaxrSYhzf2X1ZibY",
+  },
+  {
+    id: 2,
     title: "YaOficios",
     opinion:
       "Es una webapp que te permite ver  y agregar personas con diferentes oficios, en esta vas a poder encontrar y filtrar por el oficio que necesitas, está pensada (por ahora) para la provincia de San Juan.",
@@ -18,7 +27,7 @@ const projectsData = [
     img: "https://drive.google.com/uc?export=download&id=1jlbvOYR0-HY8NeaKTD-FLc4tG41QvZGb",
   },
   {
-    id: 2,
+    id: 3,
     title: "Vet App",
     opinion:
       "Es una webapp que te permite agregar Mascotas, junto al nombre del dueño, su correo y los sintomas, tambien te deja darle de alta e ir viendo gracias a localStorage cuantos pacientes has tenido.",
@@ -27,7 +36,7 @@ const projectsData = [
     img: "https://drive.google.com/uc?export=download&id=1pWPIkm-zAK_TdQcpYsxLlq7y0G8oAcst",
   },
   {
-    id: 3,
+    id: 4,
     title: "Snake Game",
     opinion: "Es un simple juego emulando el clasico snake.",
     tag: "HTML,CSS,JS,SCSS, CANVAS",
@@ -35,7 +44,7 @@ const projectsData = [
     img: "https://drive.google.com/uc?export=download&id=1HNkmW4VGG2zG2lKewH4rff0guRCXpDBp",
   },
   {
-    id: 4,
+    id: 5,
     title: "Voicetext App",
     opinion:
       "Es una web por la cual podes generar de voz a texto todo lo que digas.",
@@ -44,7 +53,7 @@ const projectsData = [
     img: "https://drive.google.com/uc?export=download&id=11IFB1NGjdlm4MZp2Lbch1ro98Rad-xFZ",
   },
   {
-    id: 5,
+    id: 6,
     title: "Courflix Netflix Clone",
     opinion: "Es una web emulando la conocida plataforma.",
     tag: "HTML,CSS,JS,SCSS",
