@@ -15,7 +15,7 @@ const projectsData = [
       "Es una webapp que con un backend y un front end, se pueden ver los sismos ocurridos, el banckend esta hosteado en Render, esta con Node.js, y el frontend con React, Tailwindcss.",
     tag: "REACT,TAILWINDCSS,API,JAVASCRIPT,NODE.JS,VERCEL,RENDER",
     url: "https://sismo-app-chi.vercel.app/",
-    img: "https://drive.google.com/uc?export=view&id=19CI52PqWpLIj-aEXoaxrSYhzf2X1ZibY",
+    img: "https://drive.google.com/u/0/uc?id=1ZSUtymcoQKqNZNvsA-laaSGkYR81p1IW&export=download",
   },
   {
     id: 2,
