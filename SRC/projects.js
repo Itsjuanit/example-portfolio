@@ -10,7 +10,7 @@ const projectsData = [
   },
   {
     id: 1,
-    title: "SismosApp",
+    title: "SISMOTRACK",
     opinion:
       "Es una webapp que con un backend y un front end, se pueden ver los sismos ocurridos, el banckend esta hosteado en Render, esta con Node.js, y el frontend con React, Tailwindcss.",
     tag: "REACT,TAILWINDCSS,API,JAVASCRIPT,NODE.JS,VERCEL,RENDER",
@@ -93,3 +93,17 @@ function displayProjects() {
 
 // 3. Llamada a la función
 document.addEventListener("DOMContentLoaded", displayProjects);
+
+function updateAge() {
+  const birthDate = new Date("1995-11-12");
+  const currentDate = new Date();
+  let age = currentDate.getFullYear() - birthDate.getFullYear();
+  const m = currentDate.getMonth() - birthDate.getMonth();
+
+  if (m < 0 || (m === 0 && currentDate.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  document.getElementById("age").textContent = age;
+}
+document.addEventListener("DOMContentLoaded", updateAge);
