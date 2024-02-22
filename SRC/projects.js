@@ -1,3 +1,10 @@
+const cryptoImage = "./SRC/assets/crypto.png"; // Ajusta la ruta según sea necesario
+const sismoImage = "./SRC/assets/terremoto.png";
+const YaOfiImgaImage = "./SRC/assets/construir.png";
+const vetImage = "./SRC/assets/VET.png";
+const snakeImage = "./SRC/assets/serpiente.png";
+const voiceImage = "./SRC/assets/hablar.png";
+const courflixImage = "./SRC/assets/netflix.png";
 const projectsData = [
   {
     id: 0,
@@ -6,7 +13,7 @@ const projectsData = [
       "Es una webapp que te permite ver el valor de las criptomonedas en tiempo real. Esta hecha con React y Styled-Components. La API que use es la de CryptoCompare.",
     tag: "REACT,STYLED-COMPONENTS,API,JAVASCRIPT",
     url: "https://cripto-app-tawny.vercel.app/",
-    img: "https://drive.google.com/uc?export=download&id=1YXpeKWkWQnsqO6oSg9nK-FAZics_G6Qn",
+    img: cryptoImage,
   },
   {
     id: 1,
@@ -15,7 +22,7 @@ const projectsData = [
       "Es una webapp que con un backend y un front end, se pueden ver los sismos ocurridos, el banckend esta hosteado en Render, esta con Node.js, y el frontend con React, Tailwindcss.",
     tag: "REACT,TAILWINDCSS,API,JAVASCRIPT,NODE.JS,VERCEL,RENDER",
     url: "https://sismo-app-chi.vercel.app/",
-    img: "https://drive.google.com/u/0/uc?id=1ZSUtymcoQKqNZNvsA-laaSGkYR81p1IW&export=download",
+    img: sismoImage,
   },
   {
     id: 2,
@@ -24,7 +31,7 @@ const projectsData = [
       "Es una webapp que te permite ver  y agregar personas con diferentes oficios, en esta vas a poder encontrar y filtrar por el oficio que necesitas, está pensada (por ahora) para la provincia de San Juan.",
     tag: "REACT,TAILWINDCSS,MONGODB,JAVASCRIPT,CSS",
     url: "https://my-recommend-app.vercel.app/",
-    img: "https://drive.google.com/uc?export=download&id=1jlbvOYR0-HY8NeaKTD-FLc4tG41QvZGb",
+    img: YaOfiImgaImage,
   },
   {
     id: 3,
@@ -33,7 +40,7 @@ const projectsData = [
       "Es una webapp que te permite agregar Mascotas, junto al nombre del dueño, su correo y los sintomas, tambien te deja darle de alta e ir viendo gracias a localStorage cuantos pacientes has tenido.",
     tag: "REACT,TAILWINDCSS,JAVASCRIPT,LOCALSTORAGE",
     url: "https://my-calendar-app-ebon.vercel.app/",
-    img: "https://drive.google.com/uc?export=download&id=1pWPIkm-zAK_TdQcpYsxLlq7y0G8oAcst",
+    img: vetImage,
   },
   {
     id: 4,
@@ -41,7 +48,7 @@ const projectsData = [
     opinion: "Es un simple juego emulando el clasico snake.",
     tag: "HTML,CSS,JS,SCSS, CANVAS",
     url: "https://snake-js-taupe.vercel.app/",
-    img: "https://drive.google.com/uc?export=download&id=1HNkmW4VGG2zG2lKewH4rff0guRCXpDBp",
+    img: snakeImage,
   },
   {
     id: 5,
@@ -50,7 +57,7 @@ const projectsData = [
       "Es una web por la cual podes generar de voz a texto todo lo que digas.",
     tag: "HTML,CSS,JS,SCSS",
     url: "https://voicetext.vercel.app/",
-    img: "https://drive.google.com/uc?export=download&id=11IFB1NGjdlm4MZp2Lbch1ro98Rad-xFZ",
+    img: voiceImage,
   },
   {
     id: 6,
@@ -58,7 +65,7 @@ const projectsData = [
     opinion: "Es una web emulando la conocida plataforma.",
     tag: "HTML,CSS,JS,SCSS",
     url: "https://courflix-vanilla-master.vercel.app/",
-    img: "https://drive.google.com/uc?export=download&id=1QhhtV3v6fdd1s40ngoXv9TZz34QiED-I",
+    img: courflixImage,
   },
 ];
 
@@ -75,16 +82,16 @@ function displayProjects() {
       .join(" ");
 
     const projectElement = `
-          <div class="section-content-images">
-            <div>
-              <p class="section-content-images-title">${project.title}</p>
-              <a href="${project.url}" target="blank_">
-                <img src="${project.img}" alt="${project.title}" />
-              </a>
-              <p class="section-content-images-opinion">${project.opinion}</p>
-              <div>${tags}</div>
-            </div>
-          </div>
+      <div class="section-content-images">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+          <p class="section-content-images-title">${project.title}</p>
+          <a href="${project.url}" target="blank_">
+            <img src="${project.img}" alt="${project.title}" style="width: 100%; max-width: 100px; height: auto;" />
+          </a>
+          <p class="section-content-images-opinion">${project.opinion}</p>
+          <div>${tags}</div>
+        </div>
+      </div>
         `;
 
     projectsContainer.insertAdjacentHTML("beforeend", projectElement);
