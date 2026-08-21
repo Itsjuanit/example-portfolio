@@ -175,6 +175,7 @@ ul, ol { list-style: none; }
 
 /* About */
 .about-text { color: var(--color-ink-soft); max-width: 60ch; }
+.about-text + .about-text { margin-top: var(--space-md); }
 
 .about-stats {
   display: flex;
