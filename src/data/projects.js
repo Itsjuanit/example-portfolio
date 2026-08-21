@@ -1,51 +1,30 @@
 export const projects = [
   {
     title: "PAGATODOYA",
-    description: "Webapp para gestionar gastos diarios con reportes financieros mensuales detallados.",
-    tags: ["React", "Firebase", "Vercel"],
-    url: "https://budget-app-gilt-phi.vercel.app/login",
+    description: "Gestion de finanzas personales: ingresos, gastos, ahorros y presupuesto mensual con estadisticas y reportes en PDF.",
+    tags: ["React", "Firebase", "Chart.js"],
+    url: "https://github.com/Itsjuanit/budget-app",
     icon: "💰"
   },
   {
-    title: "SISMOTRACK",
-    description: "Visualiza actividad sismica en tiempo real con datos precisos.",
-    tags: ["React", "Node.js", "API"],
-    url: "https://sismo-app-chi.vercel.app/",
-    icon: "🌍"
-  },
-  {
-    title: "Crypto App",
-    description: "Sigue el valor de criptomonedas en tiempo real.",
-    tags: ["React", "Styled", "API"],
-    url: "https://cripto-app-tawny.vercel.app/",
-    icon: "📈"
-  },
-  {
     title: "YaOficios",
-    description: "Encuentra y publica servicios de oficios facilmente.",
-    tags: ["React", "Tailwind", "MongoDB"],
-    url: "https://my-recommend-app.vercel.app/",
+    description: "Marketplace que conecta trabajadores especializados con personas que necesitan servicios.",
+    tags: ["React", "Vite", "Firebase"],
+    url: "https://github.com/Itsjuanit/yaoficio",
     icon: "🔧"
   },
   {
-    title: "Vet App",
-    description: "Control de pacientes veterinarios con historial completo.",
-    tags: ["React", "Tailwind"],
-    url: "https://my-calendar-app-ebon.vercel.app/",
-    icon: "🐾"
+    title: "BuscaSJ",
+    description: "Buscador de propiedades con interfaz tipo Tinder para filtrar y guardar favoritos por zona, tipo y precio.",
+    tags: ["Python", "Flask", "SQLite"],
+    url: "https://github.com/Itsjuanit/buscasj",
+    icon: "🏠"
   },
   {
-    title: "Snake Game",
-    description: "Clasico Snake moderno con JavaScript y Canvas.",
-    tags: ["JavaScript", "Canvas"],
-    url: "https://snake-js-taupe.vercel.app/",
-    icon: "🐍"
-  },
-  {
-    title: "Courflix",
-    description: "Clon de Netflix con interfaz atractiva y responsive.",
-    tags: ["HTML", "CSS", "JS"],
-    url: "https://courflix-vanilla-master.vercel.app/",
-    icon: "🎬"
+    title: "Spoty to YT Music",
+    description: "Migra playlists de Spotify a YouTube Music sin necesidad de API keys ni suscripciones.",
+    tags: ["Python", "Flask", "ytmusicapi"],
+    url: "https://github.com/Itsjuanit/spoty-to-ytmusic",
+    icon: "🎵"
   }
 ];
