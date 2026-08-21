@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Skills from '../components/Skills.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+import { projects } from '../data/projects.js';
+
+const frontend = ['React', 'Vue.js', 'JavaScript', 'TypeScript', 'HTML5', 'CSS3'];
+const tools = ['Git', 'Figma', 'Tailwind', 'Node.js', 'Firebase'];
+---
+
+<Layout title="Juan Ignacio Tejada | Desarrollador Front End">
+  <Header />
+  <main>
+    <section class="section">
+      <div class="container">
+        <Hero />
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <span class="section-label">sobre mi</span>
+        <About />
+        <div style="margin-top: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-lg);">
+          <Skills title="Frontend" skills={frontend} />
+          <Skills title="Herramientas" skills={tools} />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">proyectos</h2>
+        <div class="projects-grid">
+          {projects.map((p) => (
+            <ProjectCard
+              title={p.title}
+              description={p.description}
+              tags={p.tags}
+              url={p.url}
+              icon={p.icon}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <Contact />
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

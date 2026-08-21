@@ -1,1 +1,4 @@
 .now
+node_modules
+dist
+.astro

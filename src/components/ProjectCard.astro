@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  tags: string[];
+  url: string;
+  icon: string;
+}
+
+const { title, description, tags, url, icon } = Astro.props;
+---
+
+<a href={url} target="_blank" rel="noopener noreferrer" class="project-card animate-in">
+  <div class="project-card-head">
+    <span class="project-card-icon">{icon}</span>
+    <span class="project-card-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7V17"/>
+      </svg>
+    </span>
+  </div>
+  <h3 class="project-card-title">{title}</h3>
+  <p class="project-card-desc">{description}</p>
+  <div class="project-card-tags">
+    {tags.map(t => <span class="project-tag">{t}</span>)}
+  </div>
+</a>

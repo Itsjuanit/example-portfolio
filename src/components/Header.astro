@@ -1,0 +1,34 @@
+---
+const navLinks = [
+  { href: '#about', label: 'sobre mi' },
+  { href: '#projects', label: 'proyectos' },
+  { href: '#contact', label: 'contactos' },
+];
+---
+
+<header class="header">
+  <a href="#" class="header-logo">ITSJUANIT</a>
+  <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="header-nav" id="main-nav">
+    {navLinks.map(link => <a href={link.href}>{link.label}</a>)}
+  </nav>
+</header>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.header-nav');
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    nav?.classList.toggle('is-open');
+    document.body.style.overflow = open ? '' : 'hidden';
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav?.classList.contains('is-open')) toggle?.click();
+  });
+  nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    if (window.innerWidth < 768) toggle?.click();
+  }));
+</script>
